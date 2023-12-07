@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penang Hill</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+
+</head>
+<body>
+    <a-scene loading-scene="backgroundColor:#ffffff" cursor="rayOrigin:mouse;">
+        <a-assets>
+            <!--Arrow Icon-->
+            <img id="vrarrow" src="assets\vrarrow.png">
+    
+             <!--Background Image-->
+             <img id="bg" src="assets\VR\VR_penanghill_02.jpg"> 
+        </a-assets>
+
+        <a-entity position="-0.7 1.2 -1.5">
+            <a-entity id="arrow01" geometry="primitive:cylinder;" rotation="-90 70 120" scale="0.13 0 0.13"
+            material="src:#vrarrow; shader:flat" hyperlink="E25_VR_PENANGHILL.html">
+            </a-entity>
+        </a-entity>
+
+        <a-entity position="0.7 1.2 -1.5">
+            <a-entity id="arrow01" geometry="primitive:cylinder;" rotation="90 100 100" scale="0.13 0 0.13"
+            material="src:#vrarrow; shader:flat" hyperlink="E03_VR_PENANGHILL.html">
+            </a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity text="font:kelsonsans; value:Edgecliff; color:#E6E6E6;width:2.5" 
+            position="1.75 1 -1.5" rotation="0 0 0"></a-entity>
+        </a-entity>
+
+        <a-entity position="-1 0.8 0.9">
+            <a-entity id="arrow01" geometry="primitive:cylinder;" rotation="180 40 120" scale="0.15 0 0.15"
+            material="src:#vrarrow; shader:flat" hyperlink="E01_VR_PENANGHILL.html">
+            </a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity text="font:kelsonsans; value:The Habitat; color:#E6E6E6;width:2.5" 
+            position="0.25 1 -1.5" rotation="0 0 0"></a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity text="font:kelsonsans; value:Sri Aruloli Thirumurugan; color:#E6E6E6;width:2.3" 
+            position="-0.44 0.85 -1.5" rotation="0 0 0"></a-entity>
+        </a-entity>
+        
+        <a-entity>
+            <a-entity text="font:kelsonsans; value:Penang Hill Mosque; color:#E6E6E6;width:2.3" 
+            position="-0.2 0.7 -1.5" rotation="0 0 0"></a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity text="font:kelsonsans; value:Back To Railway Station; color:#E6E6E6;width:2.5" 
+            position="-1.2 0.62 0.25" rotation="-60 120 0"></a-entity>
+        </a-entity>
+
+        <a-entity camera look-controls="pointerLockEnabled: true" position="0 1.6 0">
+            <a-entity cursor="fuse: true; fuseTimeout: 300"
+                position="0 0 -1"
+                geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                material="color: white; shader: flat">
+           </a-entity>
+           </a-entity>
+        
+
+        <a-sky src="#bg" rotation="-2 140 3"></a-sky>     
+    </a-scene>  
+    
+</body>
+</html>
+
+<script>
+    AFRAME.registerComponent("hyperlink",{
+    schema:{default: "index.html", type:"string"},
+
+    init:function(){
+        var url = this.data;
+        this.el.addEventListener("click", function(){
+            window.location.href = url;
+        });
+    },
+});
+</script>

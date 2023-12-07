@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penang Hill</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+
+</head>
+<body>
+    <a-scene loading-scene="backgroundColor:#ffffff" cursor="rayOrigin:mouse;">
+        <a-assets>
+            <!--Arrow Icon-->
+            <img id="vrarrow" src="assets\vrarrow.png">
+    
+             <!--Background Image-->
+             <img id="bg" src="assets\VR\VR_penanghill_22.jpg"> 
+        </a-assets>
+
+        <a-entity position="0.1 0.9 -1.5">
+            <a-entity id="arrow01" geometry="primitive:cylinder;" rotation="-5 90 120" scale="0.15 0 0.15"
+            material="src:#vrarrow; shader:flat" hyperlink="E23_VR_PENANGHILL.html">
+            </a-entity>
+        </a-entity>
+
+        <a-entity position="0.9 0.9 -1.5">
+            <a-entity id="arrow01" geometry="primitive:cylinder;" rotation="-10 70 120" scale="0.14 0 0.14"
+            material="src:#vrarrow; shader:flat" hyperlink="E10_VR_PENANGHILL.html">
+            </a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity text="font:kelsonsans; value:Exit; color:#E6E6E6;width:2.5" 
+            position="2.1 0.68 -1.5" rotation="-40 -2 0"></a-entity>
+        </a-entity>
+
+        <a-entity camera look-controls="pointerLockEnabled: true" position="0 1.6 0">
+            <a-entity cursor="fuse: true; fuseTimeout: 300"
+                position="0 0 -1"
+                geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                material="color: white; shader: flat">
+           </a-entity>
+           </a-entity>
+
+        <a-sky src="#bg" rotation="-2 -200 2"></a-sky>     
+    </a-scene>  
+    
+</body>
+</html>
+
+<script>
+    AFRAME.registerComponent("hyperlink",{
+    schema:{default: "index.html", type:"string"},
+
+    init:function(){
+        var url = this.data;
+        this.el.addEventListener("click", function(){
+            window.location.href = url;
+        });
+    },
+});
+</script>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.3.0/js/all.js" crossorigin="anonymous"></script>
+    <title>Jubilee Clock Tower</title>
+</head>
+<body class="vr">
+
+    <iframe src="D01_VR_CLOCKTOWER.html" class="iframe" frameborder="0"></iframe>
+
+        <button id="mutebtn">
+            <i class="fa-solid fa-volume-xmark fa-xl" style="color: #ffffff;"></i>
+        </button>
+
+        <button id="unmutebtn">
+            <i class="fa-solid fa-volume fa-xl" style="color: #ffffff;"></i>
+        </button>
+
+        <div class="tooltip">
+            <a href="D00_VR_CLOCKTOWER.html">
+            <button id="homebtn">
+                <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+                <span class="tooltiptext">Go To First Scene</span>
+            </button>
+            </a>
+          </div>
+
+        <div class="tooltip">
+        <button id="infobtn">
+            <i class="fa-solid fa-location-dot fa-xl" style="color: #ffffff;"></i>
+            <span class="tooltiptext" style="width:180px">Jubilee Clock Tower Info</span>
+        </button>
+        </div>
+
+        <div class="tooltip">
+            <a href="21_clocktower.html">
+            <button id="websitebtn">
+                <i class="fas fa-globe fa-xl" style="color: #ffffff;"></i>
+                <span class="tooltiptext">Back To Website</span>
+            </button>
+            </a>
+        </div>
+
+        <div id="sidebar" class="sidebar closed">
+            <div class="sidebar_content">
+                <h2>Jubilee Clock Tower</h2>
+                <div class="slideshow">
+                    <img src="assets\place\02_clocktower.jpg" alt="Jubilee Clock Tower Image 1" class="active">
+                    <img src="assets\place\01_clocktower.jpg" alt="Jubilee Clock Tower Image 2">
+                </div>
+                <span id="prevBtn"><i class="fas fa-chevron-left"></i></span>
+                <span id="nextBtn"><i class="fas fa-chevron-right"></i></span>  
+                <div class="sidebar_detail">
+                    <p>&nbsp; &nbsp; &nbsp; &nbsp;The Jubilee Clock Tower is an iconic landmark in George Town, Penang, Malaysia. Built in 1897 to celebrate Queen Victoria's Diamond Jubilee, the tower stands as a testament to the city's history and cultural heritage. Its elegant design, including a prominent clock face, makes it a beloved symbol of George Town. </p>
+                    
+                    <a href="21_clocktower.html" style="text-decoration: none;"><p class="seemore">See More &nbsp;<i class="fa-solid fa-arrow-right-long fa-xl"></i></p></a>
+                </div>   
+            </div>
+            <span id="closeBtn"><i class="fas fa-times fa-lg"></i></span>
+        </div>
+</body>
+</html>
+
+<script>
+    // Get the necessary elements
+    var bgmAudio = new Audio('assets/bgm.wav');
+    var muteButton = document.getElementById('mutebtn');
+    var unmuteButton = document.getElementById('unmutebtn');
+
+    // Mute button click event handler
+    muteButton.addEventListener('click', function() {
+        bgmAudio.muted = true;
+        muteButton.style.display = 'none';
+        unmuteButton.style.display = 'block';
+    });
+
+    // Unmute button click event handler
+    unmuteButton.addEventListener('click', function() {
+        bgmAudio.muted = false;
+        unmuteButton.style.display = 'none';
+        muteButton.style.display = 'block';
+    });
+
+    // Autoplay BGM
+    bgmAudio.loop = true;
+    bgmAudio.play();
+
+    var infobtn = document.getElementById('infobtn');
+    var sidebar = document.getElementById('sidebar');
+    var closeBtn = document.getElementById('closeBtn');
+
+    // Open sidebar when infobtn is clicked
+    infobtn.addEventListener('click', function () {
+        sidebar.classList.remove('closed');
+    });
+
+    // Close sidebar when closeBtn is clicked
+    closeBtn.addEventListener('click', function () {
+        sidebar.classList.add('closed');
+    });
+
+    // Close sidebar when clicked outside the sidebar
+    window.addEventListener('click', function (event) {
+        if (event.target === sidebar) {
+            sidebar.classList.add('closed');
+        }
+    });
+
+    // Get the necessary elements
+        var slideshow = document.querySelector('.slideshow');
+        var images = slideshow.querySelectorAll('img');
+        var nextButton = document.getElementById('nextBtn');
+        var currentImageIndex = 0;
+
+        // Show the next image in the slideshow
+        function showNextImage() {
+            // Hide the current image
+            images[currentImageIndex].classList.remove('active');
+
+            // Move to the next image
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+
+            // Show the next image
+            images[currentImageIndex].classList.add('active');
+        }
+
+        // Next button click event handler
+        nextButton.addEventListener('click', showNextImage);
+
+        // Get the necessary elements
+        var prevButton = document.getElementById('prevBtn');
+
+        // Show the previous image in the slideshow
+        function showPrevImage() {
+            // Hide the current image
+            images[currentImageIndex].classList.remove('active');
+
+            // Move to the previous image
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+
+            // Show the previous image
+            images[currentImageIndex].classList.add('active');
+        }
+
+        // Previous button click event handler
+        prevButton.addEventListener('click', showPrevImage);
+</script>

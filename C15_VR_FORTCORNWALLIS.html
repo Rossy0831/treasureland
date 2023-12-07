@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fort Cornwallis</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+
+</head>
+<body>
+    <a-scene loading-scene="backgroundColor:#fff" cursor="rayOrigin:mouse;">
+        <a-assets>
+            <!--Arrow Icon-->
+            <img id="vrarrow" src="assets\vrarrow.png">
+    
+             <!--Background Image-->
+             <img id="bg" src="assets\VR\VR_fortwallis_15.jpg"> 
+        </a-assets>
+
+        <a-entity position="0.9 0.9 -2">
+            <a-entity id="arrow01" geometry="primitive:cylinder;" rotation="0 80 120" scale="0.18 0 0.18"
+            material="src:#vrarrow; shader:flat" hyperlink="C17_VR_FORTCORNWALLIS.html">
+            </a-entity>
+        </a-entity>
+
+        <a-entity position="2.5 0.9 -0.5">
+            <a-entity id="arrow01" geometry="primitive:cylinder;" rotation="0 20 120" scale="0.18 0 0.18"
+            material="src:#vrarrow; shader:flat" hyperlink="C16_VR_FORTCORNWALLIS.html">
+            </a-entity>
+        </a-entity>
+
+        <a-entity position="0.1 1 2.3">
+            <a-entity id="arrow01" geometry="primitive:cylinder;" rotation="180 90 125" scale="0.18 0 0.18"
+            material="src:#vrarrow; shader:flat" hyperlink="C14_VR_FORTCORNWALLIS.html">
+            </a-entity>
+        </a-entity>
+
+        <a-entity position="-1 1 2.7">
+            <a-entity id="arrow01" geometry="primitive:cylinder;" rotation="150 20 200" scale="0.19 0 0.19"
+            material="src:#vrarrow; shader:flat" hyperlink="C20_VR_FORTCORNWALLIS.html">
+            </a-entity>
+        </a-entity>
+
+        <a-sky src="#bg" rotation="-2 -220 4"></a-sky>     
+    </a-scene> 
+    
+    <a-entity camera look-controls="pointerLockEnabled: true" position="0 1.6 0">
+        <a-entity cursor="fuse: true; fuseTimeout: 300"
+            position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+            material="color: white; shader: flat">
+       </a-entity>
+       </a-entity>
+    
+</body>
+</html>
+
+<script>
+    AFRAME.registerComponent("hyperlink",{
+    schema:{default: "index.html", type:"string"},
+
+    init:function(){
+        var url = this.data;
+        this.el.addEventListener("click", function(){
+            window.location.href = url;
+        });
+    },
+});
+</script>
