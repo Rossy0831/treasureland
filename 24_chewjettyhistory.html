@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Of Chew Jetty</title>
+    <link rel="stylesheet" href="storystyles.css">
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
+	<style>
+		:root {
+    	--depth: 4700px;
+	}
+	</style>
+</head>
+<body>
+	<div class="story-container">
+		<section class="gallery">
+
+			<div class="frame">
+				<div class="frame_content">
+					<h2>Chew Jetty History</h2>
+				</div>
+			</div>
+
+			<div class="frame">
+				<div class="frame_content">
+					<div class="frame-media frame-media_left" style="background-image: url(../assets/place/11_history.jpg)"></div>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame_content">
+					<video class="frame-media frame-media_right" src="../assets/place/media/chewjetty.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+            <div class="frame">
+				<div class="frame_content text-left">
+					<h3>Origin and Settlement</h3>
+					<p>
+                        Chew Jetty was established in the mid-19th century by the Chew Clan, one of the five major Chinese clans that 
+						settled in Penang. The Chew Clan migrated from the Fujian province in southern China to escape poverty and seek 
+						better opportunities. They initially arrived as laborers, working on the docks and in the port-related industries.</p>
+				</div>
+			</div>
+
+            <div class="frame frame_bg">
+				<div class="frame_content">
+					<div class="frame-media frame-media_right" style="background-image: url(../assets/place/12_history.jpg)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame_content text-right">
+					<h3>Formation of Clan Jetties</h3>
+					<p>
+						As the Chew Clan community grew, they started to settle along the waterfront area. Due to limited space, the 
+						settlers constructed their houses on stilts over the water, forming what became known as the Chew Jetty. These 
+						clan jetties were essentially floating villages that provided a sense of community and a place for the 
+						families to live and work.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame_content">
+					<div class="frame-media frame-media_left" style="background-image: url(../assets/place/13_history.jpg)"></div>
+				</div>
+			</div>
+
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame_content text-left">
+					<h3>Development and Challenges</h3>
+					<p>Over the years, Chew Jetty developed into a bustling settlement with a strong sense of community. The residents 
+						relied on fishing and trading activities for their livelihoods. However, the jetty faced challenges such as fires 
+						and floods, which periodically threatened the stability of the houses. Additionally, the expansion of George Town's 
+						port and urban development plans put pressure on the existence of the clan jetties. </p>
+				</div>
+			</div>
+
+            <div class="frame frame_bg">
+				<div class="frame_content">
+					<div class="frame-media frame-media_right" style="background-image: url(../assets/place/14_history.jpg)"></div>
+				</div>
+			</div>
+
+            <div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame_content text-left">
+					<h3>Preservation Efforts</h3>
+					<p>In the early 21st century, efforts were made to preserve and revitalize Chew Jetty. The local government 
+						recognized the historical significance of the clan jetties and their cultural value. Restoration projects 
+						were undertaken to maintain the unique architectural heritage of the jetties while ensuring the safety of 
+						the residents. Chew Jetty, along with the other clan jetties, was also listed as a UNESCO World Heritage 
+						Site in 2008.</p>
+				</div>
+			</div>
+
+            <div class="frame frame_bg">
+				<div class="frame_content">
+					<div class="frame-media frame-media_right" style="background-image: url(../assets/place/15_history.jpg)"></div>
+				</div>
+			</div>
+
+            <div class="frame"></div>
+
+            <div class="frame">
+				<div class="frame_content text-left">
+					<h3>Present-Day</h3>
+					<p>Today, Chew Jetty stands as a popular tourist attraction in Penang. The wooden houses on stilts have been 
+						transformed into various businesses, including souvenir shops, cafes, and homestays. Visitors can explore 
+						the jetty's narrow walkways, observe the traditional lifestyle of the residents, and enjoy panoramic views 
+						of the George Town waterfront.</p>
+				</div>
+			</div>
+
+            <div class="frame frame_bg">
+				<div class="frame_content">
+					<div class="frame-media frame-media_right" style="background-image: url(../assets/place/16_history.jpg)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+			<div class="frame"></div>
+
+			<div class="frame frame_bg">
+				<div class="frame_content">
+					<video class="frame-media" src="../assets/place/media/chewjettywalk.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+			<div class="frame"></div>
+
+			<div class="frame ending">
+				<div class="frame_content">
+                    <p>The End</p>
+            </div>
+			</div>
+
+		</section>
+	</div>
+
+    <div class="tooltip">
+        <button onclick="goToPage()">
+            <i class="fas fa-globe fa-lg" style="color: #ffffff;"></i>
+            <span class="tooltiptext">Back To Website</span>
+        </button>
+    </div>
+	<img class="soundbutton paused" src="../assets/place/sound.gif" alt="Alt">
+	<audio class="audio" src="../assets/place/media/ambient.mp3" loop></audio>
+</body>
+</html>
+
+<script>
+    // 3D Scroll
+
+    let zSpacing = -1000,
+            lastPos = zSpacing / 5,
+            $frames = document.getElementsByClassName('frame'),
+            frames = Array.from($frames),
+            zVals = []
+
+    window.onscroll = function() {
+
+        let top = document.documentElement.scrollTop,
+                delta = lastPos - top
+
+        lastPos = top
+
+        frames.forEach(function(n, i) {
+            zVals.push((i * zSpacing) + zSpacing)
+            zVals[i] += delta * -5.5
+            let frame = frames[i],
+                    transform = `translateZ(${zVals[i]}px)`,
+                    opacity = zVals[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0
+            frame.setAttribute('style', `transform: ${transform}; opacity: ${opacity}`)
+        })
+
+    }
+
+    window.scrollTo(0, 1)
+
+    // Audio
+
+    let soundButton = document.querySelector('.soundbutton'),
+            audio = document.querySelector('.audio')
+
+    soundButton.addEventListener('click', e => {
+        soundButton.classList.toggle('paused')
+        audio.paused ? audio.play() : audio.pause()
+    })
+
+    window.onfocus = function() {
+        soundButton.classList.contains('paused') ? audio.pause() : audio.play()
+    }
+
+    window.onblur = function() {
+        audio.pause()
+    }
+
+    function goToPage() {
+      window.location.href = "18_chewjetty.html";
+    }
+</script>
+

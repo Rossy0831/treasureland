@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Of Jubilee Clock Tower</title>
+    <link rel="stylesheet" href="storystyles.css">
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
+	<style>
+		:root {
+    	--depth: 4800px;
+	}
+	</style>
+</head>
+<body>
+	<div class="story-container">
+		<section class="gallery">
+
+			<div class="frame">
+				<div class="frame_content">
+					<h2>Jubilee Clock Tower History</h2>
+				</div>
+			</div>
+
+			<div class="frame">
+				<div class="frame_content">
+					<div class="frame-media frame-media_left" style="background-image: url(../assets/place/31_history.jpg)"></div>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame_content">
+					<video class="frame-media frame-media_right" src="../assets/place/media/clocktower.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+            <div class="frame">
+				<div class="frame_content text-left">
+					<h3>Construction</h3>
+					<p>The Jubilee Clock Tower was commissioned by Cheah Chen Eok, a wealthy Penang businessman, in honor of Queen 
+						Victoria's 60th year on the British throne. The tower was designed by a local architect named James Wright 
+						and constructed by the Penang firm Messrs. H. A. C. Scott and C. B. Normand.</p>
+				</div>
+			</div>
+
+            <div class="frame frame_bg">
+				<div class="frame_content">
+					<div class="frame-media frame-media_right" style="background-image: url(../assets/place/32_history.jpg)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame_content text-right">
+					<h3>Design and Features</h3>
+					<p> The Jubilee Clock Tower was built in the Victorian architectural style, featuring a Moorish-inspired design. 
+						It stands at a height of 60 feet (18.3 meters) and is made of cast iron. The tower is adorned with intricate 
+						detailing and decorative features such as arches, columns, and balustrades.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame_content">
+					<div class="frame-media frame-media_left" style="background-image: url(../assets/place/33_history.jpg)"></div>
+				</div>
+			</div>
+
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame_content text-left">
+					<h3>Relocation</h3>
+					<p>In 1902, the Jubilee Clock Tower was moved approximately 50 meters from its original location to allow for road 
+						widening. The tower was dismantled and then reassembled at its current site, near the Esplanade and next to 
+						Fort Cornwallis.</p>
+				</div>
+			</div>
+
+            <div class="frame frame_bg">
+				<div class="frame_content">
+					<div class="frame-media frame-media_right" style="background-image: url(../assets/place/34_history.jpg)"></div>
+				</div>
+			</div>
+
+            <div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame_content text-left">
+					<h3>Restoration</h3>
+					<p>Over the years, the Jubilee Clock Tower underwent several restoration projects to maintain its structural integrity 
+						and preserve its historical value. The most significant restoration took place in 2010, where the tower was 
+						repainted and refurbished to enhance its appearance.</p>
+				</div>
+			</div>
+
+            <div class="frame frame_bg">
+				<div class="frame_content">
+					<div class="frame-media frame-media_right" style="background-image: url(../assets/place/35_history.jpg)"></div>
+				</div>
+			</div>
+
+            <div class="frame"></div>
+
+			
+
+			<div class="frame">
+				<div class="frame_content text-right">
+					<h3 style="font-size: 60px;">Symbolism and Significance</h3>
+					<p>The Jubilee Clock Tower serves as a tribute to Queen Victoria and her reign, which marked a significant period 
+						in the history of the British Empire. It also stands as a reminder of Penang's colonial past and the influence 
+						of the British East India Company in the region.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame_content">
+					<div class="frame-media frame-media_left" style="background-image: url(../assets/place/36_history.jpg)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame"></div>
+
+
+			<div class="frame frame_bg">
+				<div class="frame_content">
+					<video class="frame-media" src="../assets/place/media/clocktower.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+			<div class="frame"></div>
+
+			<div class="frame ending">
+				<div class="frame_content">
+                    <p>The End</p>
+            </div>
+			</div>
+
+		</section>
+	</div>
+
+    <div class="tooltip">
+        <button onclick="goToPage()">
+            <i class="fas fa-globe fa-lg" style="color: #ffffff;"></i>
+            <span class="tooltiptext">Back To Website</span>
+        </button>
+    </div>
+	<img class="soundbutton paused" src="../assets/place/sound.gif" alt="Alt">
+	<audio class="audio" src="../assets/place/media/ambient.mp3" loop></audio>
+</body>
+</html>
+
+<script>
+    // 3D Scroll
+
+    let zSpacing = -1000,
+            lastPos = zSpacing / 5,
+            $frames = document.getElementsByClassName('frame'),
+            frames = Array.from($frames),
+            zVals = []
+
+    window.onscroll = function() {
+
+        let top = document.documentElement.scrollTop,
+                delta = lastPos - top
+
+        lastPos = top
+
+        frames.forEach(function(n, i) {
+            zVals.push((i * zSpacing) + zSpacing)
+            zVals[i] += delta * -5.5
+            let frame = frames[i],
+                    transform = `translateZ(${zVals[i]}px)`,
+                    opacity = zVals[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0
+            frame.setAttribute('style', `transform: ${transform}; opacity: ${opacity}`)
+        })
+
+    }
+
+    window.scrollTo(0, 1)
+
+    // Audio
+
+    let soundButton = document.querySelector('.soundbutton'),
+            audio = document.querySelector('.audio')
+
+    soundButton.addEventListener('click', e => {
+        soundButton.classList.toggle('paused')
+        audio.paused ? audio.play() : audio.pause()
+    })
+
+    window.onfocus = function() {
+        soundButton.classList.contains('paused') ? audio.pause() : audio.play()
+    }
+
+    window.onblur = function() {
+        audio.pause()
+    }
+
+    function goToPage() {
+      window.location.href = "21_clocktower.html";
+    }
+</script>
+

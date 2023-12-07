@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fort Cornwallis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        .nav-links ul li a{
+        color:#404759;
+        }
+        @media(max-width:900px){
+        .nav-links ul li a{
+        color:#fff;
+        } 
+        .logo{
+            content: url('../assets/treasureland_logo.png');
+        }
+        }
+    </style>
+</head>
+<body id="page-top">
+    <header class="header2">
+        <div class="container">
+            <nav>
+            <div class="nav-links" id="navLinks">
+            <ul class="text-uppercase">
+                <li><a href="01_placestogo.html">Places to go</a></li>
+                <li><a href="02_thingstodo.html">Things to do</a></li>
+                <li><a href="00_homepage.html"><img class="logo" src="../assets/treasureland_logo2.png"></a></li>
+                <li><a href="03_aboutpenang.html">About Penang</a></li>
+                <li><a href="04_planyourtrip.html">Plan your trip</a></li>
+            </ul>
+            </div>
+            <img class="menu" src="../assets/menubar.png" alt="menubar">
+        </nav>
+    </div>
+    </header>
+
+    <section>
+        <div class="backbtn" style="margin-top: 20px" onclick="goBack()">
+            <i class="fa-solid fa-arrow-left-long fa-xl"></i>  Back
+         </div>
+        <div class="subheader">
+            <h2>Fort Cornwallis</h2>
+        <div class="button-container" style="margin-top: 0px;">
+            <button onclick="openfortcornwallis('About')" class="streetart-button">About</button>
+            <button onclick="openfortcornwallis('History')" class="streetart-button">History</button>
+            <button onclick="openfortcornwallis('Directory')" class="streetart-button">Directory</button>
+            <button onclick="openfortcornwallis('Virtual')" class="streetart-button">Virtual Tour</button>
+            <button onclick="openfortcornwallis('Faq')" class="streetart-button">FAQ </button>
+        </div>
+    </div>
+    </section>
+
+    <section class="fortcornwallis" id="About">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+
+                <div class="pslider">
+                    <div class="main-image">
+                      <img id="main-img" src="../assets/place/06_fortcornwallis.jpg" class="shadow-1-strong rounded" alt="Main Image">
+                    </div>
+                    <div class="thumbnails">
+                      <img src="../assets/place/06_fortcornwallis.jpg" alt="Thumbnail 1" onclick="changeImage('../assets/place/06_fortcornwallis.jpg')">
+                      <img src="../assets/place/07_fortcornwallis.jpg" alt="Thumbnail 2" onclick="changeImage('../assets/place/07_fortcornwallis.jpg')">
+                      <img src="../assets/place/08_fortcornwallis.jpg" alt="Thumbnail 3" onclick="changeImage('../assets/place/08_fortcornwallis.jpg')">
+                      <img src="../assets/place/09_fortcornwallis.jpg" alt="Thumbnail 4" onclick="changeImage('../assets/place/09_fortcornwallis.jpg')">
+                      <img src="../assets/place/10_fortcornwallis.jpg" alt="Thumbnail 5" onclick="changeImage('../assets/place/10_fortcornwallis.jpg')">
+                      <img src="../assets/place/11_fortcornwallis.jpg" alt="Thumbnail 6" onclick="changeImage('../assets/place/11_fortcornwallis.jpg')">
+                    </div>
+                  </div>
+                </br>
+                <p>Fort Cornwallis is a historical fortress located in George Town, the capital city of Penang state in Malaysia. It is 
+                    situated at the northeastern tip of Penang Island, overlooking the scenic views of the Malacca Strait. The fort was 
+                    built by the British East India Company in the late 18th century, specifically in 1786, when Captain Francis Light 
+                    established a British settlement in Penang.</p></br>               
+
+                <p>The purpose of constructing Fort Cornwallis was to serve as a defensive structure against potential invasions and to 
+                    protect the newly established British trading post. The fort was named after Charles Cornwallis, the Governor-General 
+                    of Bengal, who played a significant role in the British colonization of India.</p></br>
+
+                <p>Fort Cornwallis features a star-shaped design, which was a common architectural style for military fortifications 
+                    during that era. The fort's walls are made of bricks and are strategically built with bastions and cannons facing 
+                    the sea and the mainland. It covers an area of approximately 4.5 hectares (11 acres).</p></br>
+                
+                <p>Over the years, Fort Cornwallis has undergone several renovations and modifications, but it still retains its 
+                    historical charm and significance. Within the fort, there are various structures and attractions, including a 
+                    central parade ground, a chapel, a gunpowder magazine, and a historical lighthouse. Visitors can explore the 
+                    fort and learn about its history through informative displays, artifacts, and guided tours.</p></br>
+                
+                <p>oday, Fort Cornwallis is not only a popular tourist attraction but also serves as a venue for cultural events 
+                    and exhibitions. It provides visitors with a glimpse into Penang's colonial past and offers panoramic views of 
+                    the surrounding area. The fort stands as a testament to Penang's historical importance as a strategic trading port 
+                    and symbolizes the British influence in the region.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="fortcornwallis" id="History" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <div class="enterhistory" style="background-image: url(../assets/place/12_fortcornwallis.jpg)">
+                    <div class="story-content">
+                        <h2 class="story-des-1 shadowed-text">History Of Fort Cornwallis</h2>
+                        <a href="26_fortcornwallishistory.html" style="text-decoration: none;"><div class="enter-button">Enter</div></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fortcornwallis" id="Directory" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <h2>Fort Cornwallis</h2>
+                <div id="map-container">                   
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15887.909330962375!2d100.3445489!3d5.4204143!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac3859e3f8849%3A0xd4c5c969809e64de!2sFort%20Cornwallis!5e0!3m2!1sen!2smy!4v1687865678386!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div> 
+                </br></br>
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa fa-solid fa-location-dot fa-xl"></i></div>
+                    <div class="article-icon-column"><p>Jalan Tun Syed Barakbah, George Town, 10200 Penang, MALAYSIA</p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-phone fa-xl"></i></div>
+                    <div class="article-icon-column"><p>+604-263 9855</p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-clock fa-xl"></i></div>
+                    <div class="article-icon-column"><p>9:00 am until 7:00 pm (Daily)</p></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="fortcornwallis" id="Virtual" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <div class="enterhistory" style="background-image: url(../assets/place/13_fortcornwallis.jpg)">
+                    <div class="story-content">
+                        <h2 class="story-des-1 shadowed-text">360&deg;  Virtual Tour</h2>
+                        <a href="C00_VR_FORTCORNWALLIS.html" style="text-decoration: none;"><div class="enter-button">Enter</div></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fortcornwallis" id="Faq" style="display:none">
+        <div class="streetart-container">
+        <div class="wallmurals reveal">
+
+        <div class="faq-col reveal">
+            <div class="faq-section3">
+            <h2>Frequently Asked Questions</h2></br>
+
+            <div class="faq">
+                <div class="question">
+                    <p>How do I get to Fort Cornwallis?</p>
+                    <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                </div>
+                <div class="answer">
+                    <p>To get to Fort Cornwallis in George Town, Penang, you can walk from Komtar bus terminal in approximately 15-20 
+                        minutes or take a short taxi or ride-sharing service directly to the fort. If you're driving, you can use 
+                        GPS to navigate to Jalan Tun Syed Sheh Barakbah. Parking is available nearby, but it may be limited.</p> 
+                </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <p>What can I see at Fort Cornwallis??</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>At Fort Cornwallis, you can explore the historical fortification itself, which includes various structures 
+                            such as the star-shaped fort, the historic entrance gate, and old cannons. There are also informational 
+                            plaques and displays that provide insights into the history of the fort and the colonial era.</p> 
+                    </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <p>Are there guided tours available at Fort Cornwallis?</p>
+                            <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                        </div>
+                        <div class="answer">
+                            <p>Yes, guided tours are available at Fort Cornwallis. Trained guides provide informative explanations 
+                                about the history, architecture, and significance of the fort. They can also answer any questions you may have.</p> 
+                        </div>
+                        </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <p>Can I take photographs at Fort Cornwallis?</p>
+                            <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                        </div>
+                        <div class="answer">
+                            <p>Yes, photography is allowed at Fort Cornwallis. You are free to capture the fort's architecture, 
+                                cannons, and surrounding areas. However, some areas or exhibits may have restrictions on 
+                                photography, so it's best to respect any signage or instructions provided.</p> 
+                        </div>
+                        </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <p> Are there any entrance fees to visit Fort Cornwallis?</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>Yes, there is an entrance fee to visit Fort Cornwallis. The fees are vary for different age 
+                            groups, and there may be discounts for students or local residents.</p> 
+                        <p>MYKAD</p>
+                        <p>Adult RM10</p>
+                        <P>Child RM5</P></br>
+                        <p>NON-MYKAD</p>
+                        <p>Adult RM20</p>
+                        <P>Child RM10</P>
+                    </div>
+                </div>
+            
+            <div class="faq">
+                <div class="question">
+                    <p>What hotels are near Fort Cornwallis?</p>
+                    <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                </div>
+                <div class="answer">
+                    <p>Hotels near Fort Cornwallis:</p> 
+                    <p>1. (0.05 km) The Chambers Hotel</p>
+                    <p>2. (0.08 km) Merlin Hotel</p>
+                    <p>3. (0.16 km) Bishop Hotel</p>
+                    <p>4. (0.08 km) Friendship Motel</p>
+                    <p>5. (0.36 km) Ren i Tang</p> 
+                </div>
+            </div> 
+
+            <div class="faq">
+                <div class="question">
+                    <p>What restaurants are near Fort Cornwallis?
+                    </p>
+                    <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                </div>
+                <div class="answer">
+                    <p>Restaurants  near Fort Cornwallis:</p> 
+                    <p>1. (0.02 km) Constant Gardener Coffee</p>
+                    <p>2. (0.02 km) Irama Dining</p>
+                    <p>3. (0.03 km) The Chambers Restaurant</p>
+                    <p>4. (0.03 km) Slippery Senoritas</p>
+                    <p>5. (0.03 km) Koong Har Tong Wong Si Chong Chi Restaurant</p> 
+                </div>
+            </div> 
+
+            </div> 
+        </div>
+
+        </div> 
+        </div>
+    </section>
+
+    <footer class="topfooter">
+        <div class="container">
+            <div class="col">
+            <div>
+            <div class="backtotop"><a href="#page-top"><i class="fa-solid fa-arrow-up fa-xl" style="color: #ffffff;"></i></a></div>
+            <p class="contact-title">Contact Us</p>
+            <p class="contact-des">Don't hesitate to contact us if you have any inquiries!</p>
+            <ul class="mediaicon">
+                <li><a href="#"><i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a></li>
+            </ul>  
+            </div> 
+            <div class="signup">
+                <p class="signup-title">Sign Up Now</p>
+                <p class="signup-des">Sign up for more exciting contents.</p>
+                <a href="23_signup.html" style="text-decoration: none;"><div class="signup-btn">Sign Up Now</div></a>
+            </div>     
+            </div>
+        </div>
+    </footer>
+    <footer class="bottomfooter">
+        <div class="container">
+            <a href="#page-top"><img class="footerlogo" src="../assets/treasureland_logo.png"></a>
+            <p class="footer-des">TreasureLand is a travel website where you can explore and enjoy 360° virtual tours of unique and mesmerizing heritage sites and culture in Penang.</p>
+            <div class="menuLinks">
+            <ul class="footermenu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <p class="copyright">&#169;TreasureLand.com 2023. All Rights Reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>  
+        const menuHamburger = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length;i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        function openfortcornwallis(placeName) {
+        var i;
+        var x = document.getElementsByClassName("fortcornwallis");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(placeName).style.display = "block";  
+        }
+
+
+        function changeImage(imagePath) {
+        var mainImg = document.getElementById('main-img');
+        var thumbnails = document.querySelectorAll('.thumbnails img');
+
+        // Update main image
+        mainImg.src = imagePath;
+
+        // Reset opacity for all thumbnails
+        thumbnails.forEach(function(thumbnail) {
+            thumbnail.style.opacity = '0.4';
+        });
+
+        // Find the clicked thumbnail and set its opacity to 1
+        var clickedThumbnail = Array.from(thumbnails).find(function(thumbnail) {
+            return thumbnail.getAttribute('src') === imagePath;
+        });
+
+        if (clickedThumbnail) {
+            clickedThumbnail.style.opacity = '1';
+        }
+        }
+
+        var firstThumbnail = document.querySelector('.thumbnails img');
+        if (firstThumbnail) {
+        firstThumbnail.style.opacity = '1';
+        }
+
+        const faqs = document.querySelectorAll(".faq");
+
+        faqs.forEach(faq =>{
+            faq.addEventListener("click",() => {
+                faq.classList.toggle("active");
+            });
+        });
+
+        function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+</html>
+

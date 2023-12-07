@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. George's Anglican Church</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        .nav-links ul li a{
+        color:#404759;
+        }
+        @media(max-width:900px){
+        .nav-links ul li a{
+        color:#fff;
+        } 
+        .logo{
+            content: url('../assets/treasureland_logo.png');
+        }
+        }
+    </style>
+</head>
+<body id="page-top">
+    <header class="header2">
+        <div class="container">
+            <nav>
+            <div class="nav-links" id="navLinks">
+            <ul class="text-uppercase">
+                <li><a href="01_placestogo.html">Places to go</a></li>
+                <li><a href="02_thingstodo.html">Things to do</a></li>
+                <li><a href="00_homepage.html"><img class="logo" src="../assets/treasureland_logo2.png"></a></li>
+                <li><a href="03_aboutpenang.html">About Penang</a></li>
+                <li><a href="04_planyourtrip.html">Plan your trip</a></li>
+            </ul>
+            </div>
+            <img class="menu" src="../assets/menubar.png" alt="menubar">
+        </nav>
+    </div>
+    </header>
+
+    <section>
+        <div class="backbtn" style="margin-top: 20px" onclick="goBack()">
+            <i class="fa-solid fa-arrow-left-long fa-xl"></i>  Back
+         </div>
+        <div class="subheader">
+            <h2>St. George's Anglican Church</h2>
+        <div class="button-container" style="margin-top: 0px;">
+            <button onclick="openstgeorge('About')" class="streetart-button">About</button>
+            <button onclick="openstgeorge('History')" class="streetart-button">History</button>
+            <button onclick="openstgeorge('Directory')" class="streetart-button">Directory</button>
+            <button onclick="openstgeorge('Virtual')" class="streetart-button">Virtual Tour</button>
+            <button onclick="openstgeorge('Faq')" class="streetart-button">FAQ </button>
+        </div>
+    </div>
+    </section>
+
+    <section class="stgeorge" id="About">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <h2>St. George's Anglican Church</h2>
+
+                <div class="pslider">
+                    <div class="main-image">
+                      <img id="main-img" src="../assets/place/04_stgeorge.jpg" class="shadow-1-strong rounded" alt="Main Image">
+                    </div>
+                    <div class="thumbnails">
+                      <img src="../assets/place/04_stgeorge.jpg" alt="Thumbnail 1" onclick="changeImage('../assets/place/04_stgeorge.jpg')">
+                      <img src="../assets/place/05_stgeorge.jpg" alt="Thumbnail 2" onclick="changeImage('../assets/place/05_stgeorge.jpg')">
+                      <img src="../assets/place/06_stgeorge.jpg" alt="Thumbnail 3" onclick="changeImage('../assets/place/06_stgeorge.jpg')">
+                      <img src="../assets/place/07_stgeorge.jpg" alt="Thumbnail 4" onclick="changeImage('../assets/place/07_stgeorge.jpg')">
+                      <img src="../assets/place/08_stgeorge.jpg" alt="Thumbnail 5" onclick="changeImage('../assets/place/08_stgeorge.jpg')">
+                      <img src="../assets/place/09_stgeorge.jpg" alt="Thumbnail 6" onclick="changeImage('../assets/place/09_stgeorge.jpg')">
+                    </div>
+                  </div>
+                </br>
+                <p>St. George's Anglican Church in Penang is a historic and revered religious institution located in George Town, the 
+                    capital city of Penang, Malaysia. Established in 1818, it holds the distinction of being one of the oldest Anglican 
+                    churches in Southeast Asia. The church is an architectural gem, characterized by its Georgian style and Palladian 
+                    facade. Its serene presence and whitewashed exterior make it a prominent landmark in Penang's cityscape.</p></br>               
+
+                <p>The church's location on Farquhar Street, within the UNESCO World Heritage Site of George Town, further adds to its 
+                    significance. It stands amidst a tapestry of historical buildings, reflecting the multicultural heritage of Penang.</p></br>
+
+                <p>St. George's Anglican Church is not only cherished for its architectural splendor but also for its religious and 
+                    cultural contributions. Regular services are held to cater to the spiritual needs of its congregation. The church 
+                    also opens its doors to visitors, allowing them to experience its tranquil atmosphere and learn about its historical 
+                    and architectural legacy.</p></br>
+                
+                <p>Recognized as a national heritage site by the Malaysian government, the church has undergone preservation and 
+                    restoration efforts to safeguard its structural integrity and cultural value. These endeavors ensure that the 
+                    church remains a treasured symbol of Penang's rich history and diverse heritage.</p></br>
+
+                <p>Church Tours: Monday - Thursday 9am - 1pm</p></br>
+                <p>Heritage Centre: Monday - Friday 9am - 4pm </p></br>
+                     
+
+            </div>
+        </div>
+    </section>
+
+    <section class="stgeorge" id="History" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <div class="enterhistory" style="background-image: url(../assets/place/10_stgeorge.jpg)">
+                    <div class="story-content">
+                        <h2 class="story-des-1 shadowed-text">History Of St. George's Anglican Church</h2>
+                        <a href="25_stgeorgehistory.html" style="text-decoration: none;"><div class="enter-button">Enter</div></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stgeorge" id="Directory" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <h2>St. George's Anglican Church</h2>
+                <div id="map-container">                   
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15887.926403739599!2d100.3391433!3d5.4197654!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac38ffac33741%3A0xe21a71580b13b53c!2sSt.%20George&#39;s%20Anglican%20Church%2C%20Penang%2C%20Malaysia!5e0!3m2!1sen!2smy!4v1687860084204!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> 
+                </br></br>
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa fa-solid fa-location-dot fa-xl"></i></div>
+                    <div class="article-icon-column"><p>1, Lebuh Farquhar, George Town, 10200, Penang, Malaysia</p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-phone fa-xl"></i></div>
+                    <div class="article-icon-column"><p>+604 226 0708</p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-clock fa-xl"></i></div>
+                    <div class="article-icon-column">
+                        <p>Monday to Thursday : 10:00 am to 4:00 pm</p>
+                        <p>Friday : Closed</p>
+                        <p>Saturday : Open by appointment only</p>
+                        <p>Sunday : Closed</p>
+                        <p>Also closed on public holidays and other church functions such as weddings and funerals.</p>
+                    </div>
+                </div>
+                
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-envelope fa-xl"></i></div>
+                    <div class="article-icon-column"><p>admin@stgeorgeschurchpenang.com</p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-globe fa-xl"></i></div>
+                    <div class="article-icon-column"><p>http://stgeorgeschurchpenang.com</p></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="stgeorge" id="Virtual" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <div class="enterhistory" style="background-image: url(../assets/place/11_stgeorge.jpg)">
+                    <div class="story-content">
+                        <h2 class="story-des-1 shadowed-text">360&deg;  Virtual Tour</h2>
+                        <a href="B00_VR_STGEORGE.html" style="text-decoration: none;"><div class="enter-button">Enter</div></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stgeorge" id="Faq" style="display:none">
+        <div class="streetart-container">
+        <div class="wallmurals reveal">
+
+        <div class="faq-col reveal">
+            <div class="faq-section3">
+            <h2>Frequently Asked Questions</h2></br>
+
+            <div class="faq">
+                <div class="question">
+                    <p>How do I get to  St. George's Anglican Church?</p>
+                    <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                </div>
+                <div class="answer">
+                    <p>You can get there by walking from Komtar (central bus terminal) in approximately 10-15 minutes, or by using 
+                        a ride-sharing service or taxi to drop you off directly at the church.</p> 
+                </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <p>Can I attend religious services at St. George's Anglican Church?</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>Yes, St. George's Anglican Church holds regular religious services, including Sunday worship services. You 
+                            can check their schedule or contact the church office for specific service timings.</p> 
+                    </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <p>Can anyone visit St. George's Anglican Church?</p>
+                            <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                        </div>
+                        <div class="answer">
+                            <p>Yes, St. George's Anglican Church is open to visitors. You can visit the church to admire its 
+                                architecture, explore the grounds, or attend religious services.</p> 
+                        </div>
+                        </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <p>Is photography allowed inside St. George's Anglican Church?</p>
+                            <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                        </div>
+                        <div class="answer">
+                            <p>Photography is generally allowed inside St. George's Anglican Church, but it's always 
+                                courteous to ask for permission if you wish to take photographs during a service or of any specific areas within the church.</p> 
+                        </div>
+                        </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <p> Are there any entrance fees to visit St. George's Anglican Church?</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>No, there are no entrance fees to visit St. George's Anglican Church. However, donations are welcomed and 
+                            appreciated to support the maintenance and preservation of the church.</p> 
+                    </div>
+                </div>
+            
+            <div class="faq">
+                <div class="question">
+                    <p>What hotels are near St. George's Anglican Church?</p>
+                    <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                </div>
+                <div class="answer">
+                    <p>Hotels near St. George's Anglican Church:</p> 
+                    <p>1. (0.14 km) Tipsy Tiger Party Hostel</p>
+                    <p>2. (0.16 km) Coffee Atelier</p>
+                    <p>3. (0.11 km) Seven Terraces</p>
+                    <p>4. (0.10 km) Couzi Couji Boutique Hostel</p>
+                    <p>5. (0.21 km) 23 Love Lane</p> 
+                </div>
+            </div> 
+
+            <div class="faq">
+                <div class="question">
+                    <p>What restaurants are near St. George's Anglican Church?
+                    </p>
+                    <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                </div>
+                <div class="answer">
+                    <p>Restaurants  near St. George's Anglican Church:</p> 
+                    <p>1. (0.05 km) Little Boutique Cafe</p>
+                    <p>2. (0.05 km) Restoran Liyaqatali</p>
+                    <p>3. (0.05 km) Alley Catz Cafe</p>
+                    <p>4. (0.12 km) Kebaya Dining Room</p>
+                    <p>5. (0.17 km) 20 Chulia Lane Cafe</p> 
+                </div>
+            </div> 
+
+            </div> 
+        </div>
+
+        </div> 
+        </div>
+    </section>
+
+    <footer class="topfooter">
+        <div class="container">
+            <div class="col">
+            <div>
+            <div class="backtotop"><a href="#page-top"><i class="fa-solid fa-arrow-up fa-xl" style="color: #ffffff;"></i></a></div>
+            <p class="contact-title">Contact Us</p>
+            <p class="contact-des">Don't hesitate to contact us if you have any inquiries!</p>
+            <ul class="mediaicon">
+                <li><a href="#"><i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a></li>
+            </ul>  
+            </div> 
+            <div class="signup">
+                <p class="signup-title">Sign Up Now</p>
+                <p class="signup-des">Sign up for more exciting contents.</p>
+                <a href="23_signup.html" style="text-decoration: none;"><div class="signup-btn">Sign Up Now</div></a>
+            </div>     
+            </div>
+        </div>
+    </footer>
+    <footer class="bottomfooter">
+        <div class="container">
+            <a href="#page-top"><img class="footerlogo" src="../assets/treasureland_logo.png"></a>
+            <p class="footer-des">TreasureLand is a travel website where you can explore and enjoy 360° virtual tours of unique and mesmerizing heritage sites and culture in Penang.</p>
+            <div class="menuLinks">
+            <ul class="footermenu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <p class="copyright">&#169;TreasureLand.com 2023. All Rights Reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>  
+        const menuHamburger = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length;i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        function openstgeorge(placeName) {
+        var i;
+        var x = document.getElementsByClassName("stgeorge");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(placeName).style.display = "block";  
+        }
+
+
+        function changeImage(imagePath) {
+        var mainImg = document.getElementById('main-img');
+        var thumbnails = document.querySelectorAll('.thumbnails img');
+
+        // Update main image
+        mainImg.src = imagePath;
+
+        // Reset opacity for all thumbnails
+        thumbnails.forEach(function(thumbnail) {
+            thumbnail.style.opacity = '0.4';
+        });
+
+        // Find the clicked thumbnail and set its opacity to 1
+        var clickedThumbnail = Array.from(thumbnails).find(function(thumbnail) {
+            return thumbnail.getAttribute('src') === imagePath;
+        });
+
+        if (clickedThumbnail) {
+            clickedThumbnail.style.opacity = '1';
+        }
+        }
+
+        var firstThumbnail = document.querySelector('.thumbnails img');
+        if (firstThumbnail) {
+        firstThumbnail.style.opacity = '1';
+        }
+
+        const faqs = document.querySelectorAll(".faq");
+
+        faqs.forEach(faq =>{
+            faq.addEventListener("click",() => {
+                faq.classList.toggle("active");
+            });
+        });
+
+        function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+</html>
+

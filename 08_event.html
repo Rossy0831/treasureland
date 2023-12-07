@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        .nav-links ul li a{
+        color:#404759;
+        }
+        @media(max-width:900px){
+        .nav-links ul li a{
+        color:#fff;
+        } 
+        .logo{
+            content: url('../assets/treasureland_logo.png');
+        }
+        }
+    </style>
+</head>
+<body id="page-top">
+    <header class="header2">
+        <div class="container">
+            <nav>
+            <div class="nav-links" id="navLinks">
+            <ul class="text-uppercase">
+                <li><a href="01_placestogo.html">Places to go</a></li>
+                <li><a href="02_thingstodo.html">Things to do</a></li>
+                <li><a href="00_homepage.html"><img class="logo" src="../assets/treasureland_logo2.png"></a></li>
+                <li><a href="03_aboutpenang.html">About Penang</a></li>
+                <li><a href="04_planyourtrip.html">Plan your trip</a></li>
+            </ul>
+            </div>
+            <img class="menu" src="../assets/menubar.png" alt="menubar">
+        </nav>
+    </div>
+    </header>
+
+    <section>
+        <div class="backbtn" style="margin-top: 20px">
+            <a href="02_thingstodo.html#events"><i class="fa-solid fa-arrow-left-long fa-xl"></i>  Back</a>
+        </div>
+        <div class="subheader">
+        <h2>Latest Events In Penang</h2>
+        <p>Interested in discovering the heritage zones of Penang? Plan your ultimate holiday to these areas! </p>
+        <div class="button-container">
+            <button onclick="openStreetArt('all')" class="streetart-button">All</button>
+            <button onclick="openStreetArt('jan')" class="streetart-button">Jan - Mar</button>
+            <button onclick="openStreetArt('apr')" class="streetart-button">Apr - Jun </button>
+            <button onclick="openStreetArt('jul')" class="streetart-button">Jul - Sep </button>
+            <button onclick="openStreetArt('oct')" class="streetart-button">Oct - Dec </button>
+        </div>
+    </div>
+    </section>
+
+    <section class="events eventbg" id="all">
+
+        <div class="event-box">
+            <div class="events-container">
+                <div class="event-post">
+                    <div class="event-post-img">
+                        <img src="../assets/blogimg1.jpg" alt="">
+                    </div>
+                    <div class="event-post-info">
+                        <div class="event-post-date">
+                            <span>Event Date: 01 Jan 2023 - 31 Dec 2023</span>
+                        </div>
+                        <h1 class="event-post-title">Penang Hill Railway: A Centenary Celebration (1923 – 2023)</h1>
+                        <p class="event-post-text">
+                            Penang Hill Corporation is hosting a series of events in the run-up to the 100th anniversary of the Penang Hill Railway on 21 October 2023.
+                        </p>
+                        <a href="09_event01.html" class="event-post-cta">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="events-container">
+                <div class="event-post">
+                    <div class="event-post-img">
+                        <img src="../assets/blogimg5.jpg" alt="">
+                    </div>
+                    <div class="event-post-info">
+                        <div class="event-post-date">
+                            <span>Event Date: 03 Jun 2023 - 25 Jun 2023</span>
+                        </div>
+                        <h1 class="event-post-title">Penang International Food Festival (PIFF 2023)</h1>
+                        <p class="event-post-text">
+                            Penang International Food Festival (PIFF 2023) on 3 - 25 June 2023.
+                        </p>
+                        <a href="10_event02.html" class="event-post-cta">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="events-container">
+                <div class="event-post">
+                    <div class="event-post-img">
+                        <img src="../assets/blogimg3.jpg" alt="">
+                    </div>
+                    <div class="event-post-info">
+                        <div class="event-post-date">
+                            <span>Event Date: 07 Jul 2023 - 09 Jul 2023</span>
+                        </div>
+                        <h1 class="event-post-title">George Town Heritage Celebrations 2023</h1>
+                        <p class="event-post-text">
+                            George Town Heritage Celebrations is an annual community-powered event that commemorates the inscription of 
+                            George Town as a UNESCO World Heritage Site on 7 July 2008.
+                        </p>
+                        <a href="11_event03.html" class="event-post-cta">Read More</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="events-container">
+                <div class="event-post">
+                    <div class="event-post-img">
+                        <img src="../assets/blogimg4.jpg" alt="">
+                    </div>
+                    <div class="event-post-info">
+                        <div class="event-post-date">
+                            <span>Event Date: 15 Jul 2023 - 30 Jul 2023</span>
+                        </div>
+                        <h1 class="event-post-title">George Town Festival 2023</h1>
+                        <p class="event-post-text">
+                            George Town Festival (GTF) is an annual festival held in Penang, in honour of the city's designation as a 
+                            UNESCO World Heritage Site in 2008.
+                        </p>
+                        <a href="44_event04.html" class="event-post-cta">Read More</a>
+                    </div>
+                </div>
+            </div>  
+            <div class="events-container">
+                <div class="event-post">
+                    <div class="event-post-img">
+                        <img src="../assets/blogimg6.jpg" alt="">
+                    </div>
+                    <div class="event-post-info">
+                        <div class="event-post-date">
+                            <span>Event Date: 22 Jul 2023</span>
+                        </div>
+                        <h1 class="event-post-title">Music on the Hill - East Meets West 2023</h1>
+                        <p class="event-post-text">
+                            Penang Hill Festival’s signature event, “Music on the Hill - East Meets West”, is back by popular demand! The 
+                            exciting evening will feature talented local musicians playing tunes from both the East and the West.
+                        </p>
+                        <a href="45_event05.html" class="event-post-cta">Read More</a>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="events-container">
+                <div class="event-post">
+                    <div class="event-post-img">
+                        <img src="../assets/blogimg7.jpg" alt="">
+                    </div>
+                    <div class="event-post-info">
+                        <div class="event-post-date">
+                            <span>Event Date: 16 Aug 2023 - 30 Aug 2023</span>
+                        </div>
+                        <h1 class="event-post-title">Hungry Ghost Festival</h1>
+                        <p class="event-post-text">
+                            During a specific period, the Gates of Hell open, enabling spirits and ghosts to roam freely, while people set 
+                            up roadside altars, light giant joss sticks, offer food, and organize nightly operas for the entertainment of 
+                            both spirits and the public.
+                        </p>
+                        <a href="46_event06.html" class="event-post-cta">Read More</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="events-container">
+                <div class="event-post">
+                    <div class="event-post-img">
+                        <img src="../assets/blogimg8.jpg" alt="">
+                    </div>
+                    <div class="event-post-info">
+                        <div class="event-post-date">
+                            <span>Event Date: 30 Sep 2023 - 01 Oct 2023</span>
+                        </div>
+                        <h1 class="event-post-title">Matta Fair Penang</h1>
+                        <p class="event-post-text">
+                            Matta Fair Penang on 30 September 2023 to 1 October 2023 at Setia SPICE Arena, Bayan Baru, Penang.
+                        </p>
+                        <a href="47_event07.html" class="event-post-cta">Read More</a>
+                    </div>
+                </div>
+            </div> 
+    </div>
+    </section>
+    
+    <section class="events" id="jan" style="display:none">
+        <div class="event-box">
+            <div class="events-container">
+                <div class="event-post">
+                    <div class="event-post-img">
+                        <img src="../assets/blogimg1.jpg" alt="">
+                    </div>
+                    <div class="event-post-info">
+                        <div class="event-post-date">
+                            <span>Event Date: 01 Jan 2023 - 31 Dec 2023</span>
+                        </div>
+                        <h1 class="event-post-title">Penang Hill Railway: A Centenary Celebration (1923 – 2023)</h1>
+                        <p class="event-post-text">
+                            Penang Hill Corporation is hosting a series of events in the run-up to the 100th anniversary of the Penang Hill Railway on 21 October 2023.
+                        </p>
+                        <a href="09_event01.html" class="event-post-cta">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events" id="apr" style="display:none">
+        <div class="event-box">
+        <div class="events-container">
+            <div class="event-post">
+                <div class="event-post-img">
+                    <img src="../assets/blogimg5.jpg" alt="">
+                </div>
+                <div class="event-post-info">
+                    <div class="event-post-date">
+                        <span>Event Date: 03 Jun 2023 - 25 Jun 2023</span>
+                    </div>
+                    <h1 class="event-post-title">Penang International Food Festival (PIFF 2023)</h1>
+                    <p class="event-post-text">
+                        Penang International Food Festival (PIFF 2023) on 3 - 25 June 2023.
+                    </p>
+                    <a href="10_event02.html" class="event-post-cta">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="events" id="jul" style="display:none">
+        <div class="event-box">
+        <div class="events-container">
+            <div class="event-post">
+                <div class="event-post-img">
+                    <img src="../assets/blogimg3.jpg" alt="">
+                </div>
+                <div class="event-post-info">
+                    <div class="event-post-date">
+                        <span>Event Date: 07 Jul 2023 - 09 Jul 2023</span>
+                    </div>
+                    <h1 class="event-post-title">George Town Heritage Celebrations 2023</h1>
+                    <p class="event-post-text">
+                        George Town Heritage Celebrations is an annual community-powered event that commemorates the inscription of 
+                        George Town as a UNESCO World Heritage Site on 7 July 2008.
+                    </p>
+                    <a href="11_event03.html" class="event-post-cta">Read More</a>
+                </div>
+            </div>
+        </div> 
+        <div class="events-container">
+            <div class="event-post">
+                <div class="event-post-img">
+                    <img src="../assets/blogimg4.jpg" alt="">
+                </div>
+                <div class="event-post-info">
+                    <div class="event-post-date">
+                        <span>Event Date: 15 Jul 2023 - 30 Jul 2023</span>
+                    </div>
+                    <h1 class="event-post-title">George Town Festival 2023</h1>
+                    <p class="event-post-text">
+                        George Town Festival (GTF) is an annual festival held in Penang, in honour of the city's designation as a 
+                        UNESCO World Heritage Site in 2008.
+                    </p>
+                    <a href="44_event04.html" class="event-post-cta">Read More</a>
+                </div>
+            </div>
+        </div>  
+        <div class="events-container">
+            <div class="event-post">
+                <div class="event-post-img">
+                    <img src="../assets/blogimg6.jpg" alt="">
+                </div>
+                <div class="event-post-info">
+                    <div class="event-post-date">
+                        <span>Event Date: 22 Jul 2023</span>
+                    </div>
+                    <h1 class="event-post-title">Music on the Hill - East Meets West 2023</h1>
+                    <p class="event-post-text">
+                        Penang Hill Festival’s signature event, “Music on the Hill - East Meets West”, is back by popular demand! The 
+                        exciting evening will feature talented local musicians playing tunes from both the East and the West.
+                    </p>
+                    <a href="45_event05.html" class="event-post-cta">Read More</a>
+                </div>
+            </div>
+        </div> 
+        
+        <div class="events-container">
+            <div class="event-post">
+                <div class="event-post-img">
+                    <img src="../assets/blogimg7.jpg" alt="">
+                </div>
+                <div class="event-post-info">
+                    <div class="event-post-date">
+                        <span>Event Date: 16 Aug 2023 - 30 Aug 2023</span>
+                    </div>
+                    <h1 class="event-post-title">Hungry Ghost Festival</h1>
+                    <p class="event-post-text">
+                        During a specific period, the Gates of Hell open, enabling spirits and ghosts to roam freely, while people set 
+                        up roadside altars, light giant joss sticks, offer food, and organize nightly operas for the entertainment of 
+                        both spirits and the public.
+                    </p>
+                    <a href="46_event06.html" class="event-post-cta">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="events" id="oct" style="display:none;">
+    <div class="event-box">
+        <div class="events-container">
+            <div class="event-post">
+                <div class="event-post-img">
+                    <img src="../assets/blogimg1.jpg" alt="">
+                </div>
+                <div class="event-post-info">
+                    <div class="event-post-date">
+                        <span>Event Date: 01 Jan 2023 - 31 Dec 2023</span>
+                    </div>
+                    <h1 class="event-post-title">Penang Hill Railway: A Centenary Celebration (1923 – 2023)</h1>
+                    <p class="event-post-text">
+                        Penang Hill Corporation is hosting a series of events in the run-up to the 100th anniversary of the Penang Hill Railway on 21 October 2023.
+                    </p>
+                    <a href="09_event01.html" class="event-post-cta">Read More</a>
+                </div>
+            </div>
+        </div>
+    <div class="events-container" >
+        <div class="event-post">
+            <div class="event-post-img">
+                <img src="../assets/blogimg8.jpg" alt="">
+            </div>
+            <div class="event-post-info">
+                <div class="event-post-date">
+                    <span>Event Date: 30 Sep 2023 - 01 Oct 2023</span>
+                </div>
+                <h1 class="event-post-title">Matta Fair Penang</h1>
+                <p class="event-post-text">
+                    Matta Fair Penang on 30 September 2023 to 1 October 2023 at Setia SPICE Arena, Bayan Baru, Penang.
+                </p>
+                <a href="47_event07.html" class="event-post-cta">Read More</a>
+            </div>
+        </div>
+    </div> 
+</div>
+</section>
+
+
+    <footer class="topfooter">
+        <div class="container">
+            <div class="col">
+            <div>
+            <div class="backtotop"><a href="#page-top"><i class="fa-solid fa-arrow-up fa-xl" style="color: #ffffff;"></i></a></div>
+            <p class="contact-title">Contact Us</p>
+            <p class="contact-des">Don't hesitate to contact us if you have any inquiries!</p>
+            <ul class="mediaicon">
+                <li><a href="#"><i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a></li>
+            </ul>  
+            </div> 
+            <div class="signup">
+                <p class="signup-title">Sign Up Now</p>
+                <p class="signup-des">Sign up for more exciting contents.</p>
+                <a href="23_signup.html" style="text-decoration: none;"><div class="signup-btn">Sign Up Now</div></a>
+            </div>     
+            </div>
+        </div>
+    </footer>
+    <footer class="bottomfooter">
+        <div class="container">
+            <a href="#page-top"><img class="footerlogo" src="../assets/treasureland_logo.png"></a>
+            <p class="footer-des">TreasureLand is a travel website where you can explore and enjoy 360° virtual tours of unique and mesmerizing heritage sites and culture in Penang.</p>
+            <div class="menuLinks">
+            <ul class="footermenu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <p class="copyright">&#169;TreasureLand.com 2023. All Rights Reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>  
+        const menuHamburger = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length;i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        function openStreetArt(eventName) {
+        var i;
+        var x = document.getElementsByClassName("events");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(eventName).style.display = "block";  
+        }
+    </script>
+</body>
+</html>
+

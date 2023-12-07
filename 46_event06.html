@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Ghost Festival</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: #ececec;
+        }
+        .nav-links ul li a{
+        color:#404759;
+        }
+        @media(max-width:900px){
+        .nav-links ul li a{
+        color:#fff;
+        } 
+        .logo{
+            content: url('../assets/treasureland_logo.png');
+        }
+        }
+    </style>
+</head>
+<body id="page-top">
+    <header class="header2">
+        <div class="container">
+            <nav>
+            <div class="nav-links" id="navLinks">
+            <ul class="text-uppercase">
+                <li><a href="01_placestogo.html">Places to go</a></li>
+                <li><a href="02_thingstodo.html">Things to do</a></li>
+                <li><a href="00_homepage.html"><img class="logo" src="../assets/treasureland_logo2.png"></a></li>
+                <li><a href="03_aboutpenang.html">About Penang</a></li>
+                <li><a href="04_planyourtrip.html">Plan your trip</a></li>
+            </ul>
+            </div>
+            <img class="menu" src="../assets/menubar.png" alt="menubar">
+        </nav>
+    </div>
+    </header>
+
+    <section>
+        <div class="backbtn"><a href="08_event.html"><i class="fa-solid fa-arrow-left-long fa-xl"></i>  Back</a></div>
+
+        <div class="article-container">
+            <div class="article-box">
+            <div class="article">
+                <div class="article-title">Hungry Ghost Festival</div>
+                <img src="../assets/place/06_event.jpg" class="w-100 shadow-1-strong mb-4 rounded" alt="">
+
+                    <p>It is believed to be when the Gates of Hell are opened for spirits and ghosts to roam freely. Makeshift altars 
+                        are erected at roadsides where giant joss sticks are lit and food offered. Staged operas are also conducted for 
+                        the entertainment of ghosts, spirits, and the public on a nightly basis.</p></br></br>
+
+                    <p class="eventdate">Event Date</p>
+                    <p class="subeventdate">16 Aug 2023 - 30 Aug 2023</p>
+                    </br></br>
+
+                    <div class="article-icon">
+                        <div class="article-icon-column"><i class="fa-solid fa-clock fa-xl"></i></div>
+                        <div class="article-icon-column"><p>6.00 pm onwards</p></div>
+                    </div>
+
+                    <div class="article-icon">
+                        <div class="article-icon-column"><i class="fa fa-solid fa-location-dot fa-xl"></i></div>
+                        <div class="article-icon-column"><p>George Town & Around Penang</p></div>
+                    </div>
+                           
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="topfooter">
+        <div class="container">
+            <div class="col">
+            <div>
+            <div class="backtotop"><a href="#page-top"><i class="fa-solid fa-arrow-up fa-xl" style="color: #ffffff;"></i></a></div>
+            <p class="contact-title">Contact Us</p>
+            <p class="contact-des">Don't hesitate to contact us if you have any inquiries!</p>
+            <ul class="mediaicon">
+                <li><a href="#"><i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a></li>
+            </ul>  
+            </div> 
+            <div class="signup">
+                <p class="signup-title">Sign Up Now</p>
+                <p class="signup-des">Sign up for more exciting contents.</p>
+                <a href="23_signup.html" style="text-decoration: none;"><div class="signup-btn">Sign Up Now</div></a>
+            </div>     
+            </div>
+        </div>
+    </footer>
+    <footer class="bottomfooter">
+        <div class="container">
+            <a href="#page-top"><img class="footerlogo" src="../assets/treasureland_logo.png"></a>
+            <p class="footer-des">TreasureLand is a travel website where you can explore and enjoy 360° virtual tours of unique and mesmerizing heritage sites and culture in Penang.</p>
+            <div class="menuLinks">
+            <ul class="footermenu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <p class="copyright">&#169;TreasureLand.com 2023. All Rights Reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>  
+        const menuHamburger = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length;i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        const faqs = document.querySelectorAll(".faq");
+
+        faqs.forEach(faq =>{
+            faq.addEventListener("click",() => {
+                faq.classList.toggle("active");
+            });
+        });
+
+    </script>
+</body>
+</html>
+

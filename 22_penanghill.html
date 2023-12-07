@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penang Hill</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        .nav-links ul li a{
+        color:#404759;
+        }
+        @media(max-width:900px){
+        .nav-links ul li a{
+        color:#fff;
+        } 
+        .logo{
+            content: url('../assets/treasureland_logo.png');
+        }
+        }
+    </style>
+</head>
+<body id="page-top">
+    <header class="header2">
+        <div class="container">
+            <nav>
+            <div class="nav-links" id="navLinks">
+            <ul class="text-uppercase">
+                <li><a href="01_placestogo.html">Places to go</a></li>
+                <li><a href="02_thingstodo.html">Things to do</a></li>
+                <li><a href="00_homepage.html"><img class="logo" src="../assets/treasureland_logo2.png"></a></li>
+                <li><a href="03_aboutpenang.html">About Penang</a></li>
+                <li><a href="04_planyourtrip.html">Plan your trip</a></li>
+            </ul>
+            </div>
+            <img class="menu" src="../assets/menubar.png" alt="menubar">
+        </nav>
+    </div>
+    </header>
+
+    <section>
+        <div class="backbtn" style="margin-top: 20px" onclick="goBack()">
+            <i class="fa-solid fa-arrow-left-long fa-xl"></i>  Back
+         </div>
+        <div class="subheader">
+            <h2>Penang Hill</h2>
+        <div class="button-container" style="margin-top: 0px;">
+            <button onclick="openpenanghill('About')" class="streetart-button">About</button>
+            <button onclick="openpenanghill('History')" class="streetart-button">History</button>
+            <button onclick="openpenanghill('Directory')" class="streetart-button">Directory</button>
+            <button onclick="openpenanghill('Virtual')" class="streetart-button">Virtual Tour</button>
+            <button onclick="openpenanghill('Faq')" class="streetart-button">FAQ </button>
+        </div>
+    </div>
+    </section>
+
+    <section class="penanghill" id="About">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+
+                <div class="pslider">
+                    <div class="main-image">
+                      <img id="main-img" src="../assets/place/01_penanghill.jpg" class="shadow-1-strong rounded" alt="Main Image">
+                    </div>
+                    <div class="thumbnails">
+                      <img src="../assets/place/01_penanghill.jpg" alt="Thumbnail 1" onclick="changeImage('../assets/place/01_penanghill.jpg')">
+                      <img src="../assets/place/02_penanghill.jpg" alt="Thumbnail 2" onclick="changeImage('../assets/place/02_penanghill.jpg')">
+                      <img src="../assets/place/03_penanghill.jpg" alt="Thumbnail 3" onclick="changeImage('../assets/place/03_penanghill.jpg')">
+                      <img src="../assets/place/04_penanghill.jpg" alt="Thumbnail 1" onclick="changeImage('../assets/place/04_penanghill.jpg')">
+                      <img src="../assets/place/05_penanghill.jpg" alt="Thumbnail 2" onclick="changeImage('../assets/place/05_penanghill.jpg')">
+                      <img src="../assets/place/06_penanghill.jpg" alt="Thumbnail 3" onclick="changeImage('../assets/place/06_penanghill.jpg')">
+                    </div>
+                  </div>
+                </br>
+                <p>Penang Hill, also known as Bukit Bendera, is a popular tourist attraction located in the Malaysian state of Penang. 
+                    It is a hill resort situated in Air Itam, approximately 6 kilometers from the city center of George Town, the capital 
+                    of Penang. Rising about 821 meters above sea level, Penang Hill offers breathtaking views of the surrounding area, including the 
+                    cityscape, Strait of Malacca, and the mainland. It is a place of natural beauty and tranquility, attracting both 
+                    locals and tourists alike.</p></br>
+
+                <p>One of the main attractions on Penang Hill is the Penang Hill Railway, a funicular railway that takes visitors up 
+                    to the summit. The railway, which has been operating since 1923, offers a scenic ride through lush greenery and 
+                    provides an easy and convenient way to reach the top.</p></br>
+                
+                <p>At the summit of Penang Hill, visitors can explore various attractions and recreational facilities. The Owl Museum 
+                    showcases a collection of owl-related artifacts and artwork, while the Monkey Cup Garden features a diverse range 
+                    of pitcher plants. Additionally, there are several restaurants and food stalls serving local delicacies, making it 
+                    a great place to experience Penang's renowned cuisine.</p></br>
+
+                <p>Nature enthusiasts can take leisurely walks along the nature trails, enjoying the cool climate and observing the 
+                    local flora and fauna. There are also well-maintained gardens, such as the David Brown's Strawberry Hill, where 
+                    visitors can relax and enjoy the beautiful surroundings.</p></br>
+
+                <p>Penang Hill is a popular spot for locals to escape the heat and enjoy cooler temperatures, especially during the 
+                    hot summer months. It provides a peaceful retreat away from the bustling city and offers a unique vantage point 
+                    to appreciate the beauty of Penang.</p></br>
+                
+                <h2>Discover Penang Hill</h2>
+                <p style="font-weight: 700;">Episode 1</p></br>
+                <p>Discover the Best of Penang Hill as lovingly described by former Finance Minister and former Chief Minister of 
+                    Penang Lim Guan Eng. Be enthralled as you learn about what’s unique and fascinating to do while at Penang Hill.</p></br>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/5oJx1svVNiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+                </br></br></br>
+                <p style="font-weight: 700;">Episode 2</p></br>
+                <p>Be it a bold explorer, a thrill-seeker or someone in need of a rustic respite, Penang Hill has a bit of all that and 
+                    so much more to offer for an enjoyable holiday. Take a glimpse of the gems available around Penang Hill as it 
+                    strives to become the hill resort of choice in Malaysia.</p></br>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/0aoOjrXMGRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+
+                </br></br></br>
+                <p style="font-weight: 700;">Episode 3</p></br>
+                <p>Ever wonder how the renowned Penang Hill Funicular Railway and the funiculars run without hiccups. Take a look at 
+                    behind-the-scene exposes of the unsung heroes who keep the railway operations in intact condition every day.</p></br>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/6plqdTm1Rgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+                </br></br></br>
+                <p style="font-weight: 700;">Episode 4</p></br>
+                <p>Featuring a century-old virgin rainforest, Penang Hill is a collection of hills standing taller than 700 meters above sea 
+                    level.The panoramic hills nurtures rich flora and fauna that enchant nature lovers. Get mystified as you learn about the 
+                    beautifully unique nature that engulfs you.</p></br>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/b0Is6v0nxzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            </div>
+        </div>
+    </section>
+
+    <section class="penanghill" id="History" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <div class="enterhistory" style="background-image: url(../assets/place/07_penanghill.jpg)">
+                    <div class="story-content">
+                        <h2 class="story-des-1 shadowed-text">Milestones Of Penang Hill</h2>
+                        <a href="28_penanghillhistory.html" style="text-decoration: none;"><div class="enter-button">Enter</div></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="penanghill" id="Directory" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <h2>Penang Hill</h2>
+                <div id="map-container">                   
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15888.223494067925!2d100.2773317!3d5.4084612000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac28738d4ea43%3A0xf862c72e1eb12bb9!2sPenang%20Hill!5e0!3m2!1sen!2smy!4v1687918777917!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></br></br>
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa fa-solid fa-location-dot fa-xl"></i></div>
+                    <div class="article-icon-column"><p>Jalan Bukit Bendera, 11500 Ayer Itam, Penang, MALAYSIA</p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-phone fa-xl"></i></div>
+                    <div class="article-icon-column"><p>+604 828 8880</p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-clock fa-xl"></i></div>
+                    <div class="article-icon-column"><p>Monday - Sunday 6.30am - 11.00pm (Last train from top station) </p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-envelope fa-xl"></i></div>
+                    <div class="article-icon-column"><p>info@penanghill.gov.my</p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-globe fa-xl"></i></div>
+                    <div class="article-icon-column"><a href="https://www.penanghill.gov.my/00_homepage.php/en/"><p>https://www.penanghill.gov.my/00_homepage.php/en/</p></a></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="penanghill" id="Virtual" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <div class="enterhistory" style="background-image: url(../assets/place/09_penanghill.jpg)">
+                    <div class="story-content">
+                        <h2 class="story-des-1 shadowed-text">360&deg;  Virtual Tour</h2>
+                        <a href="E00_VR_PENANGHILL.html" style="text-decoration: none;"><div class="enter-button">Enter</div></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="penanghill" id="Faq" style="display:none">
+        <div class="streetart-container">
+        <div class="wallmurals reveal">
+
+        <div class="faq-col reveal">
+            <div class="faq-section3">
+            <h2>Frequently Asked Questions</h2></br>
+                <div class="faq">
+                    <div class="question">
+                        <p>What is the operating hours of Penang Hill?</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>Penang Hill’s ticketing counters are open every day, 6.15am to 8.00pm while the funicular service runs from 
+                            6.30am to 10.00pm (last trip from the Upper Station to the Lower Station).</p> 
+                        <p>Please take note that the funicular service will be shut down for its bi-annual scheduled.</p>
+                    </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <p>What is the Penang Hill Railway?</p>
+                            <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                        </div>
+                        <div class="answer">
+                            <p>The Penang Hill Railway is a funicular railway system that transports visitors from the Lower Station 
+                                to the summit of Penang Hill. It has been operating since 1923 and offers a scenic ride through 
+                                the hill's lush greenery.</p> 
+                        </div>
+                        </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <p>Are there any other ways to reach the summit of Penang Hill?</p>
+                            <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                        </div>
+                        <div class="answer">
+                            <p>Yes, besides the Penang Hill Railway, you can also hike up the hill using various nature trails 
+                                available. The trails vary in difficulty and offer a more adventurous and nature-oriented experience.</p> 
+                        </div>
+                        </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <p> What are the attractions at Penang Hill?</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>Penang Hill offers a range of attractions and activities. Some popular ones include the Owl Museum, 
+                            Monkey Cup Garden, Canopy Walk, and Love Lock. There are also several viewing decks, gardens, and 
+                            restaurants to explore.</p> 
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <p> Are there any restaurants or food options available?</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>Yes, there are several restaurants and food stalls at Penang Hill that serve a variety of local 
+                            delicacies and snacks. You can enjoy traditional Malaysian cuisine, refreshments, and even afternoon 
+                            tea at some of the dining establishments.</p> 
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <p>What is the climate like on Penang Hill?</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>Penang Hill is known for its cooler climate compared to the lowlands. The temperature is generally 
+                            a few degrees lower, providing a pleasant escape from the heat. It is advisable to bring a light 
+                            jacket or sweater, especially in the evenings.</p> 
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <p>Is there an entrance fee to visit Penang Hill?</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>Yes, there is an entrance fee for Penang Hill, which includes the Penang Hill Railway ride. 
+                            The fee varies for adults, children, and senior citizens. Additional charges may apply for 
+                            certain attractions or activities.</p> 
+                        <p>For more tickets information, please visit <a href="https://www.penanghill.gov.my/00_homepage.php/en/tickets">https://www.penanghill.gov.my/00_homepage.php/en/tickets.</a></p>
+                    </div>
+                </div>
+            </br></br>
+                <p>For more information, read full FAQ <a href="https://www.penanghill.gov.my/00_homepage.php/en/faq" style="color:#F07167">here</a>.</p>
+
+            </div> 
+        </div>
+
+        </div> 
+        </div>
+    </section>
+
+    <footer class="topfooter">
+        <div class="container">
+            <div class="col">
+            <div>
+            <div class="backtotop"><a href="#page-top"><i class="fa-solid fa-arrow-up fa-xl" style="color: #ffffff;"></i></a></div>
+            <p class="contact-title">Contact Us</p>
+            <p class="contact-des">Don't hesitate to contact us if you have any inquiries!</p>
+            <ul class="mediaicon">
+                <li><a href="#"><i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a></li>
+            </ul>  
+            </div> 
+            <div class="signup">
+                <p class="signup-title">Sign Up Now</p>
+                <p class="signup-des">Sign up for more exciting contents.</p>
+                <a href="23_signup.html" style="text-decoration: none;"><div class="signup-btn">Sign Up Now</div></a>
+            </div>     
+            </div>
+        </div>
+    </footer>
+    <footer class="bottomfooter">
+        <div class="container">
+            <a href="#page-top"><img class="footerlogo" src="../assets/treasureland_logo.png"></a>
+            <p class="footer-des">TreasureLand is a travel website where you can explore and enjoy 360° virtual tours of unique and mesmerizing heritage sites and culture in Penang.</p>
+            <div class="menuLinks">
+            <ul class="footermenu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <p class="copyright">&#169;TreasureLand.com 2023. All Rights Reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>  
+        const menuHamburger = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length;i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        function openpenanghill(placeName) {
+        var i;
+        var x = document.getElementsByClassName("penanghill");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(placeName).style.display = "block";  
+        }
+
+
+        function changeImage(imagePath) {
+        var mainImg = document.getElementById('main-img');
+        var thumbnails = document.querySelectorAll('.thumbnails img');
+
+        // Update main image
+        mainImg.src = imagePath;
+
+        // Reset opacity for all thumbnails
+        thumbnails.forEach(function(thumbnail) {
+            thumbnail.style.opacity = '0.4';
+        });
+
+        // Find the clicked thumbnail and set its opacity to 1
+        var clickedThumbnail = Array.from(thumbnails).find(function(thumbnail) {
+            return thumbnail.getAttribute('src') === imagePath;
+        });
+
+        if (clickedThumbnail) {
+            clickedThumbnail.style.opacity = '1';
+        }
+        }
+
+        var firstThumbnail = document.querySelector('.thumbnails img');
+        if (firstThumbnail) {
+        firstThumbnail.style.opacity = '1';
+        }
+
+        const faqs = document.querySelectorAll(".faq");
+
+        faqs.forEach(faq =>{
+            faq.addEventListener("click",() => {
+                faq.classList.toggle("active");
+            });
+        });
+
+        function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+</html>
+

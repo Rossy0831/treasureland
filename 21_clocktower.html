@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jubilee Clock Tower</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        .nav-links ul li a{
+        color:#404759;
+        }
+        @media(max-width:900px){
+        .nav-links ul li a{
+        color:#fff;
+        } 
+        .logo{
+            content: url('../assets/treasureland_logo.png');
+        }
+        }
+    </style>
+</head>
+<body id="page-top">
+    <header class="header2">
+        <div class="container">
+            <nav>
+            <div class="nav-links" id="navLinks">
+            <ul class="text-uppercase">
+                <li><a href="01_placestogo.html">Places to go</a></li>
+                <li><a href="02_thingstodo.html">Things to do</a></li>
+                <li><a href="00_homepage.html"><img class="logo" src="../assets/treasureland_logo2.png"></a></li>
+                <li><a href="03_aboutpenang.html">About Penang</a></li>
+                <li><a href="04_planyourtrip.html">Plan your trip</a></li>
+            </ul>
+            </div>
+            <img class="menu" src="../assets/menubar.png" alt="menubar">
+        </nav>
+    </div>
+    </header>
+
+    <section>
+        <div class="backbtn" style="margin-top: 20px" onclick="goBack()">
+            <i class="fa-solid fa-arrow-left-long fa-xl"></i>  Back
+         </div>
+        <div class="subheader">
+            <h2>Jubilee Clock Tower</h2>
+        <div class="button-container" style="margin-top: 0px;">
+            <button onclick="openclocktower('About')" class="streetart-button">About</button>
+            <button onclick="openclocktower('History')" class="streetart-button">History</button>
+            <button onclick="openclocktower('Directory')" class="streetart-button">Directory</button>
+            <button onclick="openclocktower('Virtual')" class="streetart-button">Virtual Tour</button>
+            <button onclick="openclocktower('Faq')" class="streetart-button">FAQ </button>
+        </div>
+    </div>
+    </section>
+
+    <section class="clocktower" id="About">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+    
+                <div class="pslider">
+                    <div class="main-image">
+                      <img id="main-img" src="../assets/place/04_clocktower.jpg" class="shadow-1-strong rounded" alt="Main Image">
+                    </div>
+                    <div class="thumbnails">
+                      <img src="../assets/place/04_clocktower.jpg" alt="Thumbnail 1" onclick="changeImage('../assets/place/04_clocktower.jpg')">
+                      <img src="../assets/place/03_clocktower.jpg" alt="Thumbnail 2" onclick="changeImage('../assets/place/03_clocktower.jpg')">
+                      <img src="../assets/place/05_clocktower.jpg" alt="Thumbnail 3" onclick="changeImage('../assets/place/05_clocktower.jpg')">
+                    </div>
+                  </div>
+                </br>
+                <p>The Jubilee Clock Tower, also known as the Queen Victoria Clock Tower, is an iconic clock tower situated at the 
+                    junction of Lebuh Light (Light Street) and Jalan Tun Syed Sheh Barakbah in George Town, Penang. It was constructed 
+                    in 1897 to commemorate Queen Victoria's Diamond Jubilee, marking her 60-year reign as the Queen of the United 
+                    Kingdom.</p></br>               
+
+                <p>The clock tower stands tall at a height of 60 feet and features a Moorish design, with a combination of Victorian 
+                    and Islamic architectural elements. The tower is adorned with intricate details, including carvings, arches, and 
+                    a copper dome. The clock itself was made in England and installed in the tower during its construction.</p></br>
+
+                <p>The Jubilee Clock Tower serves as a significant historical and cultural symbol in Penang. It not only commemorates 
+                    Queen Victoria but also represents the colonial heritage of the city. The tower has become an iconic landmark and a 
+                    popular spot for locals and tourists to gather and take photographs.</p></br>
+                
+                <p>Surrounded by historical buildings and within walking distance of other attractions in George Town, such as Fort 
+                    Cornwallis and the Penang State Museum, the Jubilee Clock Tower is an important point of interest in the city's 
+                    UNESCO World Heritage Site. Its strategic location and distinctive architecture make it a recognizable and beloved 
+                    feature of Penang's skyline.</p></br>
+            </div>
+        </div>
+    </section>
+
+    <section class="clocktower" id="History" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <div class="enterhistory" style="background-image: url(../assets/place/06_clocktower.jpg)">
+                    <div class="story-content">
+                        <h2 class="story-des-1 shadowed-text">History Of Jubilee Clock Tower</h2>
+                        <a href="27_clocktowerhistory.html" style="text-decoration: none;"><div class="enter-button">Enter</div></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clocktower" id="Directory" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <h2>Jubilee Clock Tower</h2>
+                <div id="map-container">                   
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.984895725744!2d100.34147817410923!3d5.419264435011368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac3bcb22a7f73%3A0xd108b1a9d66be45!2zSnViaWxlZSBDbG9jayBUb3dlciAoTWVuYXJhIEphbSBKdWJsaS8g4K6c4K-C4K6q4K6_4K6y4K6_IOCuleCun-Cuv-CuleCuvuCusCDgrpXgr4vgrqrgr4HgrrDgrq7gr40vIOmTtuemp-mSn-alvCk!5e0!3m2!1sen!2smy!4v1687873026529!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </br></br>
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa fa-solid fa-location-dot fa-xl"></i></div>
+                    <div class="article-icon-column"><p>Lebuh Light, George Town, 10450 George Town, Pulau Pinang</p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-clock fa-xl"></i></div>
+                    <div class="article-icon-column"><p>24 hours</p></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="clocktower" id="Virtual" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <div class="enterhistory" style="background-image: url(../assets/place/07_clocktower.jpg)">
+                    <div class="story-content">
+                        <h2 class="story-des-1 shadowed-text">360&deg;  Virtual Tour</h2>
+                        <a href="D00_VR_CLOCKTOWER.html" style="text-decoration: none;"><div class="enter-button">Enter</div></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clocktower" id="Faq" style="display:none">
+        <div class="streetart-container">
+        <div class="wallmurals reveal">
+
+        <div class="faq-col reveal">
+            <div class="faq-section3">
+            <h2>Frequently Asked Questions</h2></br>
+                <div class="faq">
+                    <div class="question">
+                        <p>How to get to Jubilee Clock Tower?</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>To get to the Jubilee Clock Tower in George Town, Penang, you can walk from Komtar bus terminal in 
+                            approximately 10-15 minutes or use a ride-sharing service or taxi to reach the tower directly. If 
+                            you're driving, you can use GPS to navigate to Lebuh Light. Parking options may be available 
+                            nearby.</p> 
+                    </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <p>Is the Jubilee Clock Tower accessible to the public?</p>
+                            <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                        </div>
+                        <div class="answer">
+                            <p>Yes, the Jubilee Clock Tower is a public monument and can be accessed by visitors.</p> 
+                        </div>
+                        </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <p>Can I go inside the Jubilee Clock Tower?</p>
+                            <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                        </div>
+                        <div class="answer">
+                            <p>No, the interior of the Jubilee Clock Tower is not accessible to the public.</p> 
+                        </div>
+                        </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <p> Are there any entrance fees to visit Jubilee Clock Tower?</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>No, there is no entrance fee to visit the Jubilee Clock Tower. It is open to the public 
+                            free of charge.</p> 
+                    </div>
+                </div>
+            
+            <div class="faq">
+                <div class="question">
+                    <p>What hotels are near Jubilee Clock Tower?</p>
+                    <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                </div>
+                <div class="answer">
+                    <p>Hotels near Jubilee Clock Tower:</p> 
+                    <p>1. (0.05 km) The Chambers Hotel</p>
+                    <p>2. (0.08 km) Merlin Hotel</p>
+                    <p>3. (0.16 km) Bishop Hotel</p>
+                    <p>4. (0.08 km) Friendship Motel</p>
+                    <p>5. (0.36 km) Ren i Tang</p>  
+                </div>
+            </div> 
+
+            <div class="faq">
+                <div class="question">
+                    <p>What restaurants are near Jubilee Clock Tower?
+                    </p>
+                    <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                </div>
+                <div class="answer">
+                    <p>Restaurants  near Jubilee Clock Tower:</p> 
+                    <p>1. (0.02 km) Constant Gardener Coffee</p>
+                    <p>2. (0.02 km) Irama Dining</p>
+                    <p>3. (0.03 km) The Chambers Restaurant</p>
+                    <p>4. (0.03 km) Slippery Senoritas</p>
+                    <p>5. (0.03 km) Koong Har Tong Wong Si Chong Chi Restaurant</p> 
+                </div>
+            </div> 
+
+            </div> 
+        </div>
+
+        </div> 
+        </div>
+    </section>
+
+  
+
+
+    <footer class="topfooter">
+        <div class="container">
+            <div class="col">
+            <div>
+            <div class="backtotop"><a href="#page-top"><i class="fa-solid fa-arrow-up fa-xl" style="color: #ffffff;"></i></a></div>
+            <p class="contact-title">Contact Us</p>
+            <p class="contact-des">Don't hesitate to contact us if you have any inquiries!</p>
+            <ul class="mediaicon">
+                <li><a href="#"><i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a></li>
+            </ul>  
+            </div> 
+            <div class="signup">
+                <p class="signup-title">Sign Up Now</p>
+                <p class="signup-des">Sign up for more exciting contents.</p>
+                <a href="23_signup.html" style="text-decoration: none;"><div class="signup-btn">Sign Up Now</div></a>
+            </div>     
+            </div>
+        </div>
+    </footer>
+    <footer class="bottomfooter">
+        <div class="container">
+            <a href="#page-top"><img class="footerlogo" src="../assets/treasureland_logo.png"></a>
+            <p class="footer-des">TreasureLand is a travel website where you can explore and enjoy 360° virtual tours of unique and mesmerizing heritage sites and culture in Penang.</p>
+            <div class="menuLinks">
+            <ul class="footermenu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <p class="copyright">&#169;TreasureLand.com 2023. All Rights Reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>  
+        const menuHamburger = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length;i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        function openclocktower(placeName) {
+        var i;
+        var x = document.getElementsByClassName("clocktower");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(placeName).style.display = "block";  
+        }
+
+
+        function changeImage(imagePath) {
+        var mainImg = document.getElementById('main-img');
+        var thumbnails = document.querySelectorAll('.thumbnails img');
+
+        // Update main image
+        mainImg.src = imagePath;
+
+        // Reset opacity for all thumbnails
+        thumbnails.forEach(function(thumbnail) {
+            thumbnail.style.opacity = '0.4';
+        });
+
+        // Find the clicked thumbnail and set its opacity to 1
+        var clickedThumbnail = Array.from(thumbnails).find(function(thumbnail) {
+            return thumbnail.getAttribute('src') === imagePath;
+        });
+
+        if (clickedThumbnail) {
+            clickedThumbnail.style.opacity = '1';
+        }
+        }
+
+        var firstThumbnail = document.querySelector('.thumbnails img');
+        if (firstThumbnail) {
+        firstThumbnail.style.opacity = '1';
+        }
+
+        const faqs = document.querySelectorAll(".faq");
+
+        faqs.forEach(faq =>{
+            faq.addEventListener("click",() => {
+                faq.classList.toggle("active");
+            });
+        });
+
+        function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+</html>
+

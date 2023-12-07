@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chew Jetty</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        .nav-links ul li a{
+        color:#404759;
+        }
+        @media(max-width:900px){
+        .nav-links ul li a{
+        color:#fff;
+        } 
+        .logo{
+            content: url('../assets/treasureland_logo.png');
+        }
+        }
+    </style>
+</head>
+<body id="page-top">
+    <header class="header2">
+        <div class="container">
+            <nav>
+            <div class="nav-links" id="navLinks">
+            <ul class="text-uppercase">
+                <li><a href="01_placestogo.html">Places to go</a></li>
+                <li><a href="02_thingstodo.html">Things to do</a></li>
+                <li><a href="00_homepage.html"><img class="logo" src="../assets/treasureland_logo2.png"></a></li>
+                <li><a href="03_aboutpenang.html">About Penang</a></li>
+                <li><a href="04_planyourtrip.html">Plan your trip</a></li>
+            </ul>
+            </div>
+            <img class="menu" src="../assets/menubar.png" alt="menubar">
+        </nav>
+    </div>
+    </header>
+    <section>
+        <div class="backbtn" style="margin-top: 20px" onclick="goBack()">
+            <i class="fa-solid fa-arrow-left-long fa-xl"></i>  Back
+         </div>
+        <div class="subheader">
+            <h2>Chew Jetty</h2>
+        <div class="button-container" style="margin-top: 0px;">
+            <button onclick="openChewJetty('About')" class="streetart-button">About</button>
+            <button onclick="openChewJetty('History')" class="streetart-button">History</button>
+            <button onclick="openChewJetty('Directory')" class="streetart-button">Directory</button>
+            <button onclick="openChewJetty('Virtual')" class="streetart-button">Virtual Tour</button>
+            <button onclick="openChewJetty('Faq')" class="streetart-button">FAQ </button>
+        </div>
+    </div>
+    </section>
+
+    <section class="chewjetty" id="About">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+               
+
+                <div class="pslider">
+                    <div class="main-image">
+                      <img id="main-img" src="../assets/place/05_chewjetty.jpg" class="shadow-1-strong rounded" alt="Main Image">
+                    </div>
+                    <div class="thumbnails">
+                      <img src="../assets/place/05_chewjetty.jpg" alt="Thumbnail 1" onclick="changeImage('../assets/place/05_chewjetty.jpg')">
+                      <img src="../assets/place/06_chewjetty.jpg" alt="Thumbnail 2" onclick="changeImage('../assets/place/06_chewjetty.jpg')">
+                      <img src="../assets/place/07_chewjetty.jpg" alt="Thumbnail 3" onclick="changeImage('../assets/place/07_chewjetty.jpg')">
+                      <img src="../assets/place/08_chewjetty.jpg" alt="Thumbnail 4" onclick="changeImage('../assets/place/08_chewjetty.jpg')">
+                      <img src="../assets/place/09_chewjetty.jpg" alt="Thumbnail 5" onclick="changeImage('../assets/place/09_chewjetty.jpg')">
+                      <img src="../assets/place/10_chewjetty.jpg" alt="Thumbnail 6" onclick="changeImage('../assets/place/10_chewjetty.jpg')">
+                    </div>
+                  </div>
+                </br>
+                <p>Chew Jetty Penang is located at Weld Quay, George Town, Penang and is 21 kilometres away from Lexis Suites Penang. 
+                    It is the biggest of the waterfront settlements in Georgetown and was part of the Clan Jetties Penang settling at 
+                    the southern section of Weld Quay. The wooden piers built by the Chinese were divided between the different 
+                    surname-based clans such as “Lim”, “Tan”, “Lee”, “Yeoh” and finally “Chew”, which was the most famous of all. 
+                    Chew Jetty has also become one of the focal points of the Chinese New Year celebrations in Penang in recent 
+                    years.</p></br>               
+
+                <p>Chew Jetty is unique because it has been preserved as a living heritage site. The houses on the jetty are built on 
+                    stilts above the water, and the entire settlement stretches out over the sea. It offers visitors a glimpse into 
+                    the traditional lifestyle and architecture of the Chinese community.</p></br>
+
+                <p>Today, Chew Jetty is a popular tourist attraction, drawing both locals and international visitors. It has a vibrant 
+                    atmosphere with various shops, food stalls, and souvenir stores lining the wooden walkways. You can explore the 
+                    jetty, enjoy the views of the sea and George Town's skyline, and experience the local culture.</p></br>
+                
+                <p>It's important to note that Chew Jetty is a residential area, and people still live there, so it's crucial to be 
+                    respectful of their privacy and follow any guidelines or rules set by the residents.</p></br>
+
+                <p>Visiting Chew Jetty provides a unique opportunity to learn about the historical and cultural significance of the 
+                    Chinese community in Penang while enjoying the charming ambiance of this waterfront settlement.</p>
+                     
+
+            </div>
+        </div>
+    </section>
+
+    <section class="chewjetty" id="History" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <div class="enterhistory" style="background-image: url(../assets/place/11_chewjetty.jpg)">
+                    <div class="story-content">
+                        <h2 class="story-des-1 shadowed-text">History Of Chew Jetty</h2>
+                        <a href="24_chewjettyhistory.html" style="text-decoration: none;"><div class="enter-button">Enter</div></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chewjetty" id="Directory" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <h2>Chew Jetty</h2>
+                <div id="map-container">                   
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15888.11170508942!2d100.3397723!3d5.4127175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac38d0fb545e7%3A0xc1b12a535798fa94!2sChew%20Jetty!5e0!3m2!1sen!2smy!4v1687831365879!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> 
+                </br></br>
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa fa-solid fa-location-dot fa-xl"></i></div>
+                    <div class="article-icon-column"><p>Chew Jetty, Weld Quay, George Town, 10300 George Town, Pulau Pinang, Malaysia</p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-phone fa-xl"></i></div>
+                    <div class="article-icon-column"><p>+60 11-6246 2884</p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-clock fa-xl"></i></div>
+                    <div class="article-icon-column"><p>9.00am to 9.00pm (Daily)</p></div>
+                </div>
+                
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-envelope fa-xl"></i></div>
+                    <div class="article-icon-column"><p>info@mychewjetty.com</p></div>
+                </div>
+
+                <div class="article-icon">
+                    <div class="article-icon-column"><i class="fa-solid fa-globe fa-xl"></i></div>
+                    <div class="article-icon-column"><p>http://www.mychewjetty.com</p></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="chewjetty" id="Virtual" style="display:none">
+        <div class="streetart-container">
+            <div class="wallmurals reveal">
+                <div class="enterhistory" style="background-image: url(../assets/place/12_chewjetty.jpg)">
+                    <div class="story-content">
+                        <h2 class="story-des-1 shadowed-text">360&deg;  Virtual Tour</h2>
+                        <a href="A00_VR_CHEWJETTY.html" style="text-decoration: none;"><div class="enter-button">Enter</div></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chewjetty" id="Faq" style="display:none">
+        <div class="streetart-container">
+        <div class="wallmurals reveal">
+
+        <div class="faq-col reveal">
+            <div class="faq-section3">
+            <h2>Frequently Asked Questions</h2></br>
+        
+            <div class="faq">
+            <div class="question">
+                <p>When is Chew Jetty open?</p>
+                <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+            </div>
+            <div class="answer">
+                <p>Chew Jetty is open daily from 9.00am to 9.00pm.</p> 
+            </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <p>How do I get to Chew Jetty?</p>
+                    <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                </div>
+                <div class="answer">
+                    <p>You can walk to Chew Jetty from the Weld Quay Ferry & Bus Terminal, a distance of 250 meters (800 ft). From the 
+                        bus terminal, walk south along Pengkalan Weld until you reach Chew Jetty (with posted signboard) on your left.</p> 
+                </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <p>Are there any rules or guidelines I should follow while visiting Chew Jetty?</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>Yes, it's important to be respectful to the residents and their properties. Avoid touching or entering private 
+                            homes unless explicitly invited. Additionally, be mindful of your surroundings and avoid littering.</p> 
+                    </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <p>What can I expect to see at Chew Jetty?</p>
+                            <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                        </div>
+                        <div class="answer">
+                            <p>Chew Jetty is a stilt village built on the water. When you visit, you can witness traditional wooden houses, 
+                                walk along the wooden boardwalks, and observe the daily activities of the residents. There are also small 
+                                shops selling souvenirs and local snacks.</p> 
+                        </div>
+                        </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <p>Is there an entrance fee to visit Chew Jetty?</p>
+                        <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                    </div>
+                    <div class="answer">
+                        <p>No, there is no entrance fee to visit Chew Jetty. It is open to the public, and you can freely explore the area.</p> 
+                    </div>
+                    </div>
+            
+            <div class="faq">
+                <div class="question">
+                    <p>What hotels are near Chew Jetty?</p>
+                    <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                </div>
+                <div class="answer">
+                    <p>Hotels near Chew Jetty:</p> 
+                    <p>1. (0.02 km) Hotel 19 Penang</p>
+                    <p>2. (0.23 km) SAVV Hotel</p>
+                    <p>3. (0.11 km) Victoria Garden Hotel</p>
+                    <p>4. (0.22 km) The Prestige Hotel</p>
+                    <p>5. (0.18 km) Container Hotel Penang</p> 
+                </div>
+            </div> 
+
+            <div class="faq">
+                <div class="question">
+                    <p>What restaurants are near Chew Jetty?
+                    </p>
+                    <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                </div>
+                <div class="answer">
+                    <p>Restaurants  near Chew Jetty:</p> 
+                    <p>1. (0.00 km) Ghee Seng Tomyam Seafood</p>
+                    <p>2. (0.00 km) Village Fish Head Bee Hoon</p>
+                    <p>3. (0.16 km) The Postcard Shop</p>
+                    <p>4. (0.15 km) QEII The Waterfront Venue</p>
+                    <p>5. (0.17 km) No.5 Bistro</p> 
+                </div>
+            </div> 
+
+            <div class="faq">
+                <div class="question">
+                    <p>What attractions are near Chew Jetty?</p>
+                    <span><i class="fa-solid fa-chevron-down" style="color: #8da7be;"></i></span>                
+                </div>
+                <div class="answer">
+                    <p>Attractions near Chew Jetty:</p> 
+                    <p>1. (0.12 km) Metro Bike Easy Green Travel</p>
+                    <p>2. (0.08 km) The Royale Spa</p>
+                    <p>3. (0.23 km) Wonderfood Museum Penang</p>
+                    <p>4. (0.09 km) Penang Science Cluster</p>
+                    <p>5. (0.38 km) Pinang Peranakan Mansion</p> 
+                </div>
+            </div> 
+
+            </div> 
+        </div>
+
+        </div> 
+        </div>
+    </section>
+
+    <footer class="topfooter">
+        <div class="container">
+            <div class="col">
+            <div>
+            <div class="backtotop"><a href="#page-top"><i class="fa-solid fa-arrow-up fa-xl" style="color: #ffffff;"></i></a></div>
+            <p class="contact-title">Contact Us</p>
+            <p class="contact-des">Don't hesitate to contact us if you have any inquiries!</p>
+            <ul class="mediaicon">
+                <li><a href="#"><i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a></li>
+            </ul>  
+            </div> 
+            <div class="signup">
+                <p class="signup-title">Sign Up Now</p>
+                <p class="signup-des">Sign up for more exciting contents.</p>
+                <a href="23_signup.html" style="text-decoration: none;"><div class="signup-btn">Sign Up Now</div></a>
+            </div>     
+            </div>
+        </div>
+    </footer>
+    <footer class="bottomfooter">
+        <div class="container">
+            <a href="#page-top"><img class="footerlogo" src="../assets/treasureland_logo.png"></a>
+            <p class="footer-des">TreasureLand is a travel website where you can explore and enjoy 360° virtual tours of unique and mesmerizing heritage sites and culture in Penang.</p>
+            <div class="menuLinks">
+            <ul class="footermenu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <p class="copyright">&#169;TreasureLand.com 2023. All Rights Reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>  
+        const menuHamburger = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length;i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        function openChewJetty(placeName) {
+        var i;
+        var x = document.getElementsByClassName("chewjetty");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        document.getElementById(placeName).style.display = "block";  
+        }
+
+
+        function changeImage(imagePath) {
+        var mainImg = document.getElementById('main-img');
+        var thumbnails = document.querySelectorAll('.thumbnails img');
+
+        // Update main image
+        mainImg.src = imagePath;
+
+        // Reset opacity for all thumbnails
+        thumbnails.forEach(function(thumbnail) {
+            thumbnail.style.opacity = '0.4';
+        });
+
+        // Find the clicked thumbnail and set its opacity to 1
+        var clickedThumbnail = Array.from(thumbnails).find(function(thumbnail) {
+            return thumbnail.getAttribute('src') === imagePath;
+        });
+
+        if (clickedThumbnail) {
+            clickedThumbnail.style.opacity = '1';
+        }
+        }
+
+        var firstThumbnail = document.querySelector('.thumbnails img');
+        if (firstThumbnail) {
+        firstThumbnail.style.opacity = '1';
+        }
+
+        const faqs = document.querySelectorAll(".faq");
+
+        faqs.forEach(faq =>{
+            faq.addEventListener("click",() => {
+                faq.classList.toggle("active");
+            });
+        });
+
+        function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+</html>
+
